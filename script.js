@@ -1128,11 +1128,12 @@ savedExtraInfos.forEach(
 
     input.value = value;
 
-  extraInfoArea.appendChild(
-  input
-);
-      
+    extraInfoArea.appendChild(
+      input
+    );
 
+  }
+);
 }
 }
 
