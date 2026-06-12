@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <h1>
+
+  <span class="sub-title">
+    完成イメージを見ながら作る
+  </span>
+
+  戦績画像メーカー
+
+</h1>
+
+
+<div class="preview-wrapper">
+
+  <div id="previewArea">
+
+    ここに画像の見本が表示されます
+
+  </div>
+
+</div>
+
+<div class="preview-header-row">
+
+  <button id="saveImageBtn">
+    画像を保存する
+  </button>
+
+</div>
+
+<details class="debug-area">
+
+  <summary>
+    現在の戦績
+  </summary>
+
+  <div id="summaryArea"></div>
+
+</details>
+
+<details class="debug-area">
+
+  <summary>
+    対戦履歴
+  </summary>
+
+  <div id="recordArea"></div>
+
+</details>
+
+
+<div class="match-input-card">
+
+  <div class="match-input-title">
+    対戦結果を入力
+  </div>
+
+  <div class="phase-select">
+
+    <label>
+      <input
+        type="radio"
+        name="phase"
+        value="予選"
+        checked
+      >
+      予選戦績に入力
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="phase"
+        value="本戦"
+      >
+      本戦戦績に入力
+    </label>
+
+  </div>
+
+  <br>
+
+  <input
+    type="text"
+    id="deckName"
+    placeholder="対戦相手のデッキ名"
+  >
+<br><br>
+
+<label>
+  <input
+    type="radio"
+    name="play"
+    value="先攻"
+    checked
+  >
+  先攻
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="play"
+    value="後攻"
+  >
+  後攻
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="play"
+    value="未記録"
+  >
+  未記録
+</label>
+
+<br><br>
+
+<label>
+  <input
+    type="radio"
+    name="result"
+    value="勝"
+    checked
+  >
+  勝
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="result"
+    value="負"
+  >
+  負
+</label>
+
+<br><br>
+
+<button id="saveBtn">
+ この対戦結果を戦績に追加
+</button>
+  </div>
+</div>
+<button id="deleteBtn">
+  ひとつ前に入力した対戦結果を削除
+</button>
+<br><br>
+<button id="resetBtn">
+  新しい大会の入力を始める
+</button>
+<br><br>
+<details>
+  
+  <summary>
+    大会情報と最終順位
+  </summary>
+
+<h3 class="section-title">
+  大会の基本情報を入力
+  </h3>
+  
+<div class="field-title">
+  自分の使用デッキ
+</div>
+
+<input
+  type="text"
+  id="myDeck"
+>
+
+<br><br>
+
+<div class="field-title">
+  大会名
+</div>
+
+<input
+  type="text"
+  id="tournamentName"
+>
+
+<br><br>
+
+<div class="field-title">
+  開催日
+</div>
+
+<input
+  type="text"
+  id="tournamentDate"
+>
+
+<button id="todayBtn">
+  現在の日付を自動入力
+</button>
+  <div class="field-title rank-title">
+  最終順位を選ぶ
+</div>
+
+<select id="finalResult">
+  
+  <option value="未選択" selected>
+  未選択
+</option>
+  <option>優勝</option>
+<option>準優勝</option>
+<option>3位</option>
+<option>4位</option>
+<option>ベスト8</option>
+<option>ベスト16</option>
+<option>ベスト32</option>
+<option>ベスト64</option>
+<option>ベスト128</option>
+<option>予選敗退</option>
+<option>その他(自分で入力)</option>
+
+</select>
+
+<br>
+<input
+  type="text"
+  id="customResult"
+  maxlength="12"
+  placeholder="最終順位を入力（12文字まで）"
+  style="display:none;"
+>
+  <br>
+  <hr>
+<h3 class="section-title">
+  補足情報を自由に入力
+</h3>
+
+<div id="extraInfoArea">
+
+  <input
+    type="text"
+    class="extraInfo"
+    placeholder="参加人数 50人"
+  >
+
+</div>
+
+<br>
+<button id="addInfoBtn">
+  ＋項目追加
+</button>
+
+<button id="removeInfoBtn">
+  最後の項目を削除
+</button>
+  
+  
+</details>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>

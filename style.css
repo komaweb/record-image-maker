@@ -1,0 +1,586 @@
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  padding: 20px;
+
+  background: #F5F5F7;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  padding-left: 10px;
+
+  border: 2px solid #DDDDDD;
+  border-radius: 8px;
+}
+
+button {
+
+  height: 30px;
+
+  padding: 0 20px;
+
+  border: 1px solid #000;
+
+  border-radius: 10px;
+
+  background: #FFF;
+
+  font-size: 15px;
+
+}
+
+.match {
+  background: white;
+
+  border: 2px solid #DDDDDD;
+  border-radius: 14px;
+
+  padding: 15px;
+
+  margin-top: 10px;
+}
+
+.deck-name {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+
+  gap: 10px;
+}
+
+.play-tag {
+  background: #E8F5E9;
+  color: #2E7D32;
+
+  padding: 6px 12px;
+
+  border-radius: 8px;
+}
+
+.result-tag {
+  padding: 6px 12px;
+
+  border-radius: 8px;
+}
+
+.勝 {
+  background: #FFF8E1;
+  color: #F57F17;
+}
+
+.負 {
+  background: #EEEEEE;
+  color: #666666;
+}
+.summary-card {
+
+  padding-top: 10px;
+}
+
+.summary-row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 8px 0;
+}
+
+.summary-value {
+
+  font-weight: bold;
+
+  font-size: 20px;
+}
+details {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 14px;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+}
+
+summary {
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+
+  color: #007AFF;
+}
+details {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 14px;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+}
+
+summary {
+
+  font-weight: bold;
+
+  color: #007AFF;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+.section-title {
+  font-size: 20px;
+  margin-bottom: 1.6em;
+
+}
+
+.field-title {
+
+  font-weight: bold;
+
+  margin-bottom: 0.2em;
+
+}
+#previewArea {
+
+  background: #FFFFFF;
+
+  border: 1px solid #EAEAEA;
+
+  box-shadow:
+    0 6px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+
+  margin-top: 10px;
+
+}
+.preview-wrapper {
+
+  width: 100%;
+
+  overflow: visible;
+
+}
+
+#previewArea {
+
+  width: 950px;
+
+  transform-origin: top left;
+
+}
+.preview-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+
+}
+
+.preview-title {
+
+  font-size: 50px;
+
+  font-weight: bold;
+
+}
+
+.preview-date {
+
+  font-size: 30px;
+
+  color: #888;
+
+}
+
+.preview-deck-card {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+}
+
+.preview-label {
+
+  color: #888;
+
+  font-size: 25px;
+
+  margin-bottom: 12px;
+
+}
+
+.preview-info-card {
+
+  font-size: 30px;
+
+  padding-left: 20px;
+  
+  color: #888;
+
+}
+
+.preview-deck {
+
+  font-size: 65px;
+
+  font-weight: bold;
+
+}
+.preview-match-card {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+}
+
+.preview-card-title {
+
+  color: #888;
+
+  font-size: 25px;
+
+  margin-bottom: 12px;
+
+}
+.preview-match-card {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+}
+
+.preview-match-row {
+  
+  font-size: 40px;
+  
+  padding: 20px 45px;
+
+  border-bottom: 2px solid #EEEEEE;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.preview-play-tag,
+.preview-result-tag {
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 4px 10px;
+
+  border-radius: 8px;
+
+  font-size: 35px;
+
+}
+.preview-play-tag.先攻 {
+
+  background: #E8F5E9;
+
+  color: #2E7D32;
+
+}
+
+.preview-play-tag.後攻 {
+
+  background: #E3F2FD;
+
+  color: #1565C0;
+
+}
+
+.preview-play-tag.未記録 {
+
+  background: #F8F8F8;
+
+  color: #888888;
+
+  border: 2px dashed #BBBBBB;
+
+}
+.preview-result-tag.勝 {
+
+  background: #FFF8E1;
+
+  color: #F57F17;
+
+}
+
+.preview-result-tag.負 {
+
+  background: #EEEEEE;
+
+  color: #666666;
+
+}
+.preview-record {
+
+  margin-top: 16px;
+
+  font-weight: bold;
+
+  text-align: right;
+
+}
+.preview-summary {
+
+  display: flex;
+  
+  padding: 0 30px;
+  
+  justify-content: space-between;
+
+  margin-top: 16px;
+
+  font-weight: bold;
+
+}
+.preview-summary {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 16px;
+
+  padding-top: 14px;
+
+  min-height: 48px;
+
+}
+.preview-score {
+
+  font-size: 70px;
+ 
+  margin-left: 25px;
+
+}
+
+.preview-status {
+
+  padding: 6px 12px;
+
+  border-radius: 8px;
+
+}
+.status-win,
+.status-lose,
+.status-progress {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 8px 14px;
+
+  border-radius: 10px;
+
+  line-height: 1;
+
+}
+.status-lose {
+
+  background: #EEEEEE;
+
+  color: #666666;
+
+}
+.status-progress {
+
+  background: #FDECEC;
+
+  color: #C62828;
+
+}
+.result-rank {
+
+  font-size: 55px;
+
+}
+.status-win {
+
+  background: #FFF8E1;
+
+  color: #F57F17;
+
+}
+.debug-area {
+
+  display: none;
+
+}
+.preview-score-label {
+
+  font-size: 38px;
+
+}
+
+.result-label {
+
+  color: #000;
+  font-size: 38px;
+    
+}
+.preview-header-row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 10px;
+
+  margin-top: 20px;
+
+}
+.preview-deck-name {
+
+  flex: 1;
+
+  min-width: 0;
+
+}
+
+.preview-tags {
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  white-space: nowrap;
+
+}
+#finalResult {
+  margin-top: 15px;
+}
+#customResult {
+  margin-top: 15px;
+}
+.sub-title {
+
+  display: block;
+
+  font-size: 25px;
+
+  font-weight: normal;
+
+  color: #888;
+
+  margin-bottom: 4px;
+
+}
+.phase-select {
+
+  margin-top: 20px;
+
+}
+
+.match-input-card {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+}
+.match-input-title {
+
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  margin-bottom: 15px;
+
+}
+input[type="text"],
+select {
+
+  font-size: 20px;
+
+}
+#todayBtn {
+
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+.rank-title {
+
+  margin-top: 25px;
+  
+  font-size: 20px;
+
+}
