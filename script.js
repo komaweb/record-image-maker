@@ -406,14 +406,6 @@ addInfoBtn.addEventListener(
 extraInfoArea.appendChild(
   input
 );
-
-extraInfoArea.appendChild(
-  document.createElement("br")
-);
-
-extraInfoArea.appendChild(
-  document.createElement("br")
-);
 saveSettings();
   }
 );
