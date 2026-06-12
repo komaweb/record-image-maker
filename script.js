@@ -403,17 +403,17 @@ addInfoBtn.addEventListener(
     input.placeholder =
       "項目を入力";
 
-    extraInfoArea.appendChild(
-      document.createElement("br")
-    );
+extraInfoArea.appendChild(
+  input
+);
 
-    extraInfoArea.appendChild(
-      document.createElement("br")
-    );
+extraInfoArea.appendChild(
+  document.createElement("br")
+);
 
-    extraInfoArea.appendChild(
-      input
-    );
+extraInfoArea.appendChild(
+  document.createElement("br")
+);
 saveSettings();
   }
 );
