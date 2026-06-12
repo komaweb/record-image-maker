@@ -1144,23 +1144,28 @@ savedExtraInfos.forEach(
 
     input.value = value;
 
-    extraInfoArea.appendChild(
-      input
-    );
+  extraInfoArea.appendChild(
+  input
+);
 
-    extraInfoArea.appendChild(
-      document.createElement(
-        "br"
-      )
-    );
+if (
+  index <
+  savedExtraInfos.length - 1
+) {
 
-    extraInfoArea.appendChild(
-      document.createElement(
-        "br"
-      )
-    );
+  extraInfoArea.appendChild(
+    document.createElement(
+      "br"
+    )
+  );
 
-  }
+  extraInfoArea.appendChild(
+    document.createElement(
+      "br"
+    )
+  );
+
+}
 );
 
 }
