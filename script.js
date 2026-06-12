@@ -1139,25 +1139,12 @@ savedExtraInfos.forEach(
   extraInfoArea.appendChild(
   input
 );
-
-if (
-  index <
-  savedExtraInfos.length - 1
-) {
-
-  extraInfoArea.appendChild(
-    document.createElement(
-      "br"
     )
   );
 
   extraInfoArea.appendChild(
     document.createElement(
-      "br"
-    )
-  );
-
-}
+      
 );
 
 }
