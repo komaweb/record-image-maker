@@ -1132,7 +1132,6 @@ savedExtraInfos.forEach(
   input
 );
       
-);
 
 }
 }
