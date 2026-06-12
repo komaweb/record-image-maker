@@ -430,15 +430,7 @@ removeInfoBtn.addEventListener(
     const lastInput =
       inputs[inputs.length - 1];
 
-    const prevBr1 =
-      lastInput.previousSibling;
-
-    const prevBr2 =
-      prevBr1.previousSibling;
-
-    lastInput.remove();
-prevBr1.remove();
-prevBr2.remove();
+lastInput.remove();
 
 saveSettings();
 
@@ -1139,11 +1131,6 @@ savedExtraInfos.forEach(
   extraInfoArea.appendChild(
   input
 );
-    )
-  );
-
-  extraInfoArea.appendChild(
-    document.createElement(
       
 );
 
