@@ -225,9 +225,6 @@ records.honsen.forEach(
 );
 
 }
-updateRecordView();
-updatePreview();
-resizePreview();
 
 saveBtn.addEventListener(
   "click",
@@ -917,6 +914,10 @@ const resetBtn =
     "resetBtn"
   );
 loadSettings();
+
+updateRecordView();
+updatePreview();
+resizePreview();
 if (
   finalResult.value ===
   "その他(自分で入力)"
