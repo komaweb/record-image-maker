@@ -172,12 +172,13 @@ summary {
 }
 .preview-wrapper {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   height: auto;
 
   display: flex;
   justify-content: center;
-}body {
+}
+body {
   overflow-x: hidden;
 }
 #previewArea {
