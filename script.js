@@ -970,7 +970,13 @@ previewArea.innerHTML = `
 ${honsenCardHtml}
 
 `;
-resizePreview();
+previewArea.innerHTML = `
+...
+`;
+
+requestAnimationFrame(() => {
+  resizePreview();
+});
 
 }
 updatePreview();
@@ -1069,12 +1075,14 @@ const saveImageBtn =
 const resetBtn =
   document.getElementById(
     "resetBtn"
-  );
-loadSettings();
+  );loadSettings();
 
 updateRecordView();
 updatePreview();
-resizePreview();
+
+setTimeout(() => {
+  resizePreview();
+}, 100);
 if (
   finalResult.value ===
   "その他(自分で入力)"
