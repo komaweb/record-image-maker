@@ -172,18 +172,16 @@ summary {
 }
 .preview-wrapper {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   height: auto;
-
-  display: flex;
-  justify-content: center;
 }
 body {
   overflow-x: hidden;
 }
 #previewArea {
   width: 950px;
-  
+  transform-origin: top left;
+  display: block;
 }
 .preview-header {
 
@@ -622,6 +620,7 @@ details[open] summary {
   margin-bottom: 25px;
 
 }
+
 #resetBtn {
 
   display: block;
@@ -632,9 +631,7 @@ details[open] summary {
 
   border: 1px solid #C62828;
 
-}
-
-.section-description {
+  .section-description {
 
   color: #888;
 
@@ -642,6 +639,7 @@ details[open] summary {
 
   margin-bottom: 25px;
 
+}
 }
 
 
