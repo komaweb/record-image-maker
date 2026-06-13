@@ -1078,9 +1078,6 @@ loadSettings();
 updateRecordView();
 updatePreview();
 
-setTimeout(() => {
-  resizePreview();
-}, 100);
 if (
   finalResult.value ===
   "その他(自分で入力)"
