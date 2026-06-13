@@ -969,14 +969,6 @@ previewArea.innerHTML = `
 
 ${honsenCardHtml}
 
-`;
-previewArea.innerHTML = `
-...
-`;
-
-requestAnimationFrame(() => {
-  resizePreview();
-});
 
 }
 updatePreview();
