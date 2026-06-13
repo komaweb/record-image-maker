@@ -10,6 +10,12 @@ body {
   background: #F5F5F7;
 }
 
+html,
+body {
+
+  overflow-x: hidden;
+
+}
 
 input[type="text"] {
   width: 100%;
