@@ -677,3 +677,15 @@ hr {
   margin-left: calc(50% - 150px);
 
 }
+#saveImageBtn,
+#resetBtn {
+
+  display: block;
+
+  width: fit-content;
+
+  margin-left: auto;
+
+  margin-right: calc(50% - 150px);
+
+}
