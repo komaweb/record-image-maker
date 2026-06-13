@@ -5,8 +5,10 @@ body {
     sans-serif;
 
   padding: 20px;
+  padding-bottom: 120px;
 
   background: #F5F5F7;
+}
 }
 
 input[type="text"] {
