@@ -1044,7 +1044,7 @@ function resizePreview() {
 
   const scale =
     Math.min(
-      wrapper.clientWidth / 950,
+      (wrapper.clientWidth - 20) / 950,
       1
     );
 
@@ -1053,13 +1053,13 @@ function resizePreview() {
 
   preview.style.transformOrigin =
     "top left";
+wrapper.style.height =
+  `${Math.ceil(
+    preview.getBoundingClientRect().height
+  ) + 10}px`;
+}
 
-  wrapper.style.height =
-    `${Math.ceil(
-      preview.getBoundingClientRect().height
-    ) + 25}px`;
-
-}window.addEventListener(
+window.addEventListener(
   "resize",
   resizePreview
 );
@@ -1369,8 +1369,7 @@ document.querySelector(
     resizePreview();
   }
 );
-document.title =
-  wrapper.clientWidth;
+
 console.log(`
 戦績画像メーカー
 
