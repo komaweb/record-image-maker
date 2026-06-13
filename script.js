@@ -966,9 +966,13 @@ previewArea.innerHTML = `
 </div>
 
 </div>
-
 ${honsenCardHtml}
 
+`;
+
+requestAnimationFrame(() => {
+  resizePreview();
+});
 
 }
 updatePreview();
@@ -1059,10 +1063,6 @@ window.addEventListener(
 );
 
 resizePreview();
-const saveImageBtn =
-  document.getElementById(
-    "saveImageBtn"
-  );
 
 const resetBtn =
   document.getElementById(
