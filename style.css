@@ -172,7 +172,6 @@ summary {
 }
 .preview-wrapper {
   width: 100%;
-  overflow: hidden;
   height: auto;
 }
 body {
