@@ -606,6 +606,12 @@ select {
 
   margin-top: 20px;
 
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
 }
 
 .preview-header-image-card img {
