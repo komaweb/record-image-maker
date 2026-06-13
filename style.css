@@ -549,10 +549,6 @@ select {
   font-size: 20px;
 
 }
-#todayBtn {
-
-  margin-top: 10px;
-}
 .rank-title {
 
   margin-top: 25px;
@@ -607,11 +603,7 @@ select {
 
   display: block;
 }
-#deleteBtn {
 
-  margin-top: 30px;
-
-}
 ＃removeHeaderImageBtn {
 
   margin-top: 30px;
@@ -660,14 +652,12 @@ details[open] summary {
 
   font-size: 15px;
 
-  margin-top: 8px;
-
   margin-bottom: 20px;
 
 }
 
 .input-group input {
 
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 
 }
