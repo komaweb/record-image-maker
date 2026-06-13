@@ -173,19 +173,17 @@ summary {
 .preview-wrapper {
   width: 100%;
   overflow: hidden;
+  height: auto;
 }
 body {
   overflow-x: hidden;
 }
 #previewArea {
-
   width: 950px;
-
   transform-origin: top left;
-
-  display: inline-block;
-
-}.preview-header {
+  display: block;
+}
+preview-header {
 
   display: flex;
 
