@@ -165,12 +165,12 @@ summary {
 
 }
 .preview-wrapper {
-
   width: 100%;
+  overflow: visible;
+}
 
+body {
   overflow-x: hidden;
-  overflow-y: visible;
-
 }
 #previewArea {
 
