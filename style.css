@@ -591,11 +591,11 @@ select {
 }
 .preview-header-image-card img {
 
+  display: block;
+
   width: 100%;
 
   height: auto;
-
-  display: block;
 
 }
 .image-note {
