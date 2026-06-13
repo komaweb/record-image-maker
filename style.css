@@ -603,6 +603,8 @@ select {
 
   box-sizing: border-box;
 
+  max-height: 500px;
+
 }
 .image-note {
 
