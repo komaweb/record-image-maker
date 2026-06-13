@@ -1043,10 +1043,15 @@ function resizePreview() {
     );
 
   const scale =
-    Math.min(
-      (wrapper.clientWidth - 5) / 950,
-      1
-    );
+  Math.min(
+    wrapper.clientWidth / 950,
+    1
+  );
+
+wrapper.style.height =
+  `${Math.ceil(
+    preview.getBoundingClientRect().height
+  ) + 40}px`;
 
   preview.style.transform =
     `scale(${scale})`;
