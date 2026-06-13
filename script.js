@@ -1056,7 +1056,7 @@ function resizePreview() {
 wrapper.style.height =
   `${Math.ceil(
     preview.getBoundingClientRect().height
-  ) + 10}px`;
+  ) + 25}px`;
 }
 
 window.addEventListener(
