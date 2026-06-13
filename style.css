@@ -589,21 +589,15 @@ select {
   box-sizing: border-box;
 
 }
-.preview-header-image-card {
+.preview-header-image-card img {
 
-  background: white;
+  width: 100%;
 
-  border: 2px solid #DDDDDD;
+  height: 100%;
 
-  border-radius: 20px;
+  display: block;
 
-  overflow: hidden;
-
-  margin-top: 20px;
-
-  box-sizing: border-box;
-
-  max-height: 500px;
+  object-fit: cover;
 
 }
 .image-note {
