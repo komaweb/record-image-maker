@@ -467,39 +467,83 @@ reader.onload = () => {
 
   img.onload = () => {
 
-    const imageNote =
-      document.getElementById(
-        "imageNote"
+
+    const canvas =
+      document.createElement(
+        "canvas"
       );
 
+    const maxWidth = 1200;
+
+    let width =
+      img.width;
+
+    let height =
+      img.height;
+
     if (
-      img.height > img.width
+      width > maxWidth
     ) {
 
-      imageNote.textContent =
-        "縦長画像は縮小表示される場合があります";
+      const scale =
+        maxWidth / width;
 
-    } else {
+      width =
+        maxWidth;
 
-      imageNote.textContent =
-        "横長画像がおすすめです";
+      height =
+        height * scale;
 
     }
 
-    localStorage.setItem(
-      "headerImage",
-      reader.result
+    canvas.width =
+      width;
+
+    canvas.height =
+      height;
+
+    const ctx =
+      canvas.getContext(
+        "2d"
+      );
+
+    ctx.drawImage(
+      img,
+      0,
+      0,
+      width,
+      height
     );
 
-    updatePreview();
+    const compressedImage =
+      canvas.toDataURL(
+        "image/jpeg",
+        0.8
+      );
+
+    try {
+
+      localStorage.setItem(
+        "headerImage",
+        compressedImage
+      );
+
+      updatePreview();
+
+    } catch {
+
+      alert(
+        "画像サイズが大きすぎるため読み込めませんでした。\n別の画像をお試しください。"
+      );
+
+    }
 
   };
 
   img.src =
     reader.result;
 
-};   
-
+};
 
     reader.readAsDataURL(
       file
@@ -522,10 +566,6 @@ removeHeaderImageBtn.addEventListener(
 
     headerImageInput.value = "";
 
-    document.getElementById(
-      "imageNote"
-    ).textContent =
-      "横長画像がおすすめです";
 
     updatePreview();
 
@@ -1258,10 +1298,6 @@ function loadSettings() {
 
   }
 
-  const savedImage =
-    localStorage.getItem(
-      "headerImage"
-    );
 
   if (savedImage) {
 
@@ -1270,12 +1306,6 @@ function loadSettings() {
 
     img.onload = () => {
 
-      document.getElementById(
-        "imageNote"
-      ).textContent =
-        img.height > img.width
-          ? "縦長画像は縮小表示される場合があります"
-          : "横長画像がおすすめです";
 
     };
 
