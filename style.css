@@ -686,3 +686,6 @@ hr {
   margin-right: calc(50% - 150px);
 
 }
+#previewArea {
+  padding-bottom: 35px;
+}
