@@ -1044,7 +1044,7 @@ function resizePreview() {
 
   const scale =
     Math.min(
-      (wrapper.clientWidth - 30) / 950,
+      (wrapper.clientWidth / 950,
       1
     );
 
