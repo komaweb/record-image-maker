@@ -164,7 +164,7 @@ summary {
   border: 1px solid #EAEAEA;
 
   box-shadow:
-    0 6px 30px rgba(0, 0, 0, 0.15);
+    0 8px 40px rgba(0, 0, 0, 0.22);
   padding: 20px;
 
   margin-top: 10px;
@@ -655,7 +655,13 @@ details[open] summary {
   margin-bottom: 20px;
 
 }
+hr {
 
+  margin-top: 15px;
+
+  margin-bottom: 30px;
+
+}
 .input-group input {
 
   margin-bottom: 20px;
