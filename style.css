@@ -9,7 +9,7 @@ body {
 
   background: #F5F5F7;
 }
-}
+
 
 input[type="text"] {
   width: 100%;
@@ -121,28 +121,6 @@ details {
   margin-bottom: 15px;
 }
 
-summary {
-
-  font-weight: bold;
-
-  cursor: pointer;
-
-  text-decoration: underline;
-
-  color: #007AFF;
-}
-details {
-
-  background: white;
-
-  border: 2px solid #DDDDDD;
-
-  border-radius: 14px;
-
-  padding: 12px;
-
-  margin-bottom: 15px;
-}
 
 summary {
 
