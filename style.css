@@ -18,18 +18,22 @@ body {
 }
 
 input[type="text"] {
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 300px;
   height: 40px;
 
   box-sizing: border-box;
 
-  padding-left: 10px;
+  text-align: center;
 
   border: 2px solid #DDDDDD;
   border-radius: 8px;
 }
-
 button {
 
   height: 30px;
@@ -636,4 +640,13 @@ details[open] summary {
 
   border: 1px solid #C62828;
 
+  .section-description {
+
+  color: #888;
+
+  font-size: 16px;
+
+  margin-bottom: 25px;
+
+}
 }
