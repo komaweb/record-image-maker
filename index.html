@@ -204,76 +204,75 @@ gtag('config', 'G-G0V6WFMYGN');
   </summary>
 
 <h3 class="section-title">
-  大会の基本情報を入力
-  </h3>
-  
-<div class="field-title">
-  自分の使用デッキ
-</div>
+  大会情報
+</h3>
+
 <input
   type="text"
   id="myDeck"
->
-  <br><br>
-
-<div class="field-title">
-  大会名
-</div>
-
-<input
-  type="text"
-  id="tournamentName"
+  placeholder="使用デッキ"
 >
 
 <br><br>
 
-<div class="field-title">
-  開催日
-</div>
+<input
+  type="text"
+  id="tournamentName"
+  placeholder="大会名"
+>
+
+<br><br>
 
 <input
   type="text"
   id="tournamentDate"
+  placeholder="開催日"
 >
 
 <button id="todayBtn">
   現在の日付を自動入力
 </button>
-  <div class="field-title rank-title">
-  最終順位を選ぶ
-</div>
+
+<hr>
+
+<h3 class="section-title">
+  最終順位
+</h3>
 
 <select id="finalResult">
-  
+
   <option value="未選択" selected>
-  未選択
-</option>
+    未選択
+  </option>
+
   <option>優勝</option>
-<option>準優勝</option>
-<option>3位</option>
-<option>4位</option>
-<option>ベスト8</option>
-<option>ベスト16</option>
-<option>ベスト32</option>
-<option>ベスト64</option>
-<option>ベスト128</option>
-<option>予選敗退</option>
-<option>その他(自分で入力)</option>
+  <option>準優勝</option>
+  <option>3位</option>
+  <option>4位</option>
+  <option>ベスト8</option>
+  <option>ベスト16</option>
+  <option>ベスト32</option>
+  <option>ベスト64</option>
+  <option>ベスト128</option>
+  <option>予選敗退</option>
+  <option>その他(自分で入力)</option>
 
 </select>
 
 <br>
+
 <input
   type="text"
   id="customResult"
   maxlength="12"
-  placeholder="最終順位を入力（12文字まで）"
+  placeholder="自由入力（12文字まで）"
   style="display:none;"
 >
-  <br>
-  <hr>
+
+<hr>
+
 <h3 class="section-title">
-  補足情報を自由に入力
+  補足情報
 </h3>
 
 <div id="extraInfoArea">
@@ -281,12 +280,13 @@ gtag('config', 'G-G0V6WFMYGN');
   <input
     type="text"
     class="extraInfo"
-    placeholder="参加人数 50人"
+    placeholder="参加人数　50人"
   >
 
 </div>
 
 <br>
+
 <button id="addInfoBtn">
   ＋項目追加
 </button>
@@ -294,7 +294,7 @@ gtag('config', 'G-G0V6WFMYGN');
 <button id="removeInfoBtn">
   最後の項目を削除
 </button>
-  
+
 </details>
     
 <button id="resetBtn">
