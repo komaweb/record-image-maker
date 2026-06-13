@@ -183,7 +183,7 @@ body {
 }
 #previewArea {
   width: 950px;
-  display: block;
+  transform: none !important;
 }
 .preview-header {
 
