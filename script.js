@@ -474,28 +474,25 @@ reader.onload = () => {
       );
 
     const maxWidth = 1200;
+const maxHeight = 2000;
 
-    let width =
-      img.width;
+let width =
+  img.width;
 
-    let height =
-      img.height;
+let height =
+  img.height;
 
-    if (
-      width > maxWidth
-    ) {
+const scale = Math.min(
+  maxWidth / width,
+  maxHeight / height,
+  1
+);
 
-      const scale =
-        maxWidth / width;
+width =
+  Math.round(width * scale);
 
-      width =
-        maxWidth;
-
-      height =
-        height * scale;
-
-    }
-
+height =
+  Math.round(height * scale);
     canvas.width =
       width;
 
