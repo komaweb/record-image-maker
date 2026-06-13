@@ -174,8 +174,10 @@ summary {
   width: 100%;
   overflow: hidden;
   height: auto;
-}
-body {
+
+  display: flex;
+  justify-content: center;
+}body {
   overflow-x: hidden;
 }
 #previewArea {
