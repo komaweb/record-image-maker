@@ -667,3 +667,13 @@ hr {
   margin-bottom: 12px;
 
 }
+#saveBtn,
+#deleteBtn,
+#todayBtn,
+#addInfoBtn,
+#removeInfoBtn,
+#removeHeaderImageBtn {
+
+  margin-left: calc(50% - 150px);
+
+}
