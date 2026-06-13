@@ -1154,11 +1154,11 @@ localStorage.setItem(
 );
 }
 function loadSettings() {
-  
-const myDeck =
-  localStorage.getItem(
-    "myDeck"
-  );
+
+  const myDeck =
+    localStorage.getItem(
+      "myDeck"
+    );
 
   const tournamentName =
     localStorage.getItem(
@@ -1193,9 +1193,9 @@ const myDeck =
     ).value = tournamentDate;
   }
 
-document.getElementById(
-  "finalResult"
-).value = "未選択";
+  document.getElementById(
+    "finalResult"
+  ).value = "未選択";
 
   if (currentPhase) {
 
@@ -1211,69 +1211,75 @@ document.getElementById(
     }
 
   }
-const savedExtraInfos =
-  JSON.parse(
-    localStorage.getItem(
-      "extraInfos"
-    )
-  ) || [];
 
-if (
-  savedExtraInfos.length > 0
-) {
+  const savedExtraInfos =
+    JSON.parse(
+      localStorage.getItem(
+        "extraInfos"
+      )
+    ) || [];
 
-  extraInfoArea.innerHTML = "";
+  if (
+    savedExtraInfos.length > 0
+  ) {
 
-savedExtraInfos.forEach(
-  (value, index) => {
+    extraInfoArea.innerHTML = "";
 
-    const input =
-      document.createElement(
-        "input"
-      );
+    savedExtraInfos.forEach(
+      (value, index) => {
 
-    input.type = "text";
-    input.className = "extraInfo";
+        const input =
+          document.createElement(
+            "input"
+          );
 
-    input.placeholder =
-      index === 0
-        ? "参加人数 50人"
-        : "項目を入力";
+        input.type = "text";
+        input.className =
+          "extraInfo";
 
-    input.value = value;
+        input.placeholder =
+          index === 0
+            ? "参加人数 50人"
+            : "項目を入力";
 
-    extraInfoArea.appendChild(
-      input
+        input.value = value;
+
+        extraInfoArea.appendChild(
+          input
+        );
+
+      }
     );
 
   }
-);
+
   const savedImage =
-  localStorage.getItem(
-    "headerImage"
-  );
+    localStorage.getItem(
+      "headerImage"
+    );
 
-if (savedImage) {
+  if (savedImage) {
 
-  const img =
-    new Image();
+    const img =
+      new Image();
 
-  img.onload = () => {
+    img.onload = () => {
 
-    document.getElementById(
-      "imageNote"
-    ).textContent =
-      img.height > img.width
-        ? "縦長画像は縮小表示される場合があります"
-        : "横長画像がおすすめです";
+      document.getElementById(
+        "imageNote"
+      ).textContent =
+        img.height > img.width
+          ? "縦長画像は縮小表示される場合があります"
+          : "横長画像がおすすめです";
 
-  };
+    };
 
-  img.src =
-    savedImage;
+    img.src =
+      savedImage;
+
+  }
 
 }
-
 resetBtn.addEventListener(
   "click",
   () => {
