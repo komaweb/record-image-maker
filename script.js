@@ -548,13 +548,20 @@ if (
 
 }
 
-const rankSize =
-  Math.max(
-    26,
-    60 - displayResult.length * 6
-  );
+let rankSize = 60;
 
 if (
+  selectedResult ===
+  "その他(自分で入力)"
+) {
+
+  rankSize =
+    Math.max(
+      26,
+      60 - displayResult.length * 6
+    );
+
+}if (
   selectedResult === "予選敗退"
 ) {
 
