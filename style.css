@@ -594,3 +594,35 @@ select {
   margin-bottom: 12px;
 
 }
+.preview-header-image-card {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-top: 20px;
+
+}
+
+.preview-header-image-card img {
+
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+.image-note {
+
+  margin-top: 8px;
+
+  color: #888;
+
+  font-size: 14px;
+
+}
