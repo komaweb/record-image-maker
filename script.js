@@ -460,20 +460,74 @@ headerImageInput.addEventListener(
     const reader =
       new FileReader();
 
-    reader.onload = () => {
+reader.onload = () => {
 
-      localStorage.setItem(
-        "headerImage",
-        reader.result
+  const img =
+    new Image();
+
+  img.onload = () => {
+
+    const imageNote =
+      document.getElementById(
+        "imageNote"
       );
 
-      updatePreview();
+    if (
+      img.height > img.width
+    ) {
 
-    };
+      imageNote.textContent =
+        "縦長画像は縮小表示される場合があります";
+
+    } else {
+
+      imageNote.textContent =
+        "横長画像がおすすめです";
+
+    }
+
+    localStorage.setItem(
+      "headerImage",
+      reader.result
+    );
+
+    updatePreview();
+
+  };
+
+  img.src =
+    reader.result;
+
+};   
+
 
     reader.readAsDataURL(
       file
     );
+
+  }
+);
+const removeHeaderImageBtn =
+  document.getElementById(
+    "removeHeaderImageBtn"
+  );
+
+removeHeaderImageBtn.addEventListener(
+  "click",
+  () => {
+
+    localStorage.removeItem(
+      "headerImage"
+    );
+
+    headerImageInput.value = "";
+
+    document.getElementById(
+      "imageNote"
+    ).textContent =
+      "横長画像がおすすめです";
+
+    updatePreview();
 
   }
 );
@@ -1194,7 +1248,30 @@ savedExtraInfos.forEach(
 
   }
 );
-}
+  const savedImage =
+  localStorage.getItem(
+    "headerImage"
+  );
+
+if (savedImage) {
+
+  const img =
+    new Image();
+
+  img.onload = () => {
+
+    document.getElementById(
+      "imageNote"
+    ).textContent =
+      img.height > img.width
+        ? "縦長画像は縮小表示される場合があります"
+        : "横長画像がおすすめです";
+
+  };
+
+  img.src =
+    savedImage;
+
 }
 
 resetBtn.addEventListener(
