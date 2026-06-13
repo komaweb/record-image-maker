@@ -1361,7 +1361,9 @@ document.querySelector(
     updateRecordView();
     updatePreview();
     resizePreview();
-
+document.getElementById(
+  "previewArea"
+).style.visibility = "visible";
   }
 );
 console.log(`
