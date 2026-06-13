@@ -1048,21 +1048,22 @@ function resizePreview() {
     1
   );
 
+preview.style.transform =
+  `scale(${scale})`;
+
+preview.style.transformOrigin =
+  "top left";
+
+const scaledWidth =
+  950 * scale;
+
+preview.style.marginLeft =
+  `${(wrapper.clientWidth - scaledWidth) / 2}px`;
+
 wrapper.style.height =
   `${Math.ceil(
     preview.getBoundingClientRect().height
-  ) + 40}px`;
-
-  preview.style.transform =
-    `scale(${scale})`;
-
-  preview.style.transformOrigin =
-    "top left";
-wrapper.style.height =
-  `${Math.ceil(
-    preview.getBoundingClientRect().height
-  ) + 25}px`;
-}
+  ) + 25}px`;}
 
 window.addEventListener(
   "resize",
