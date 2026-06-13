@@ -61,7 +61,10 @@ const deckName =
 
 const recordArea =
   document.getElementById("recordArea");
-
+const summaryArea =
+  document.getElementById(
+    "summaryArea"
+  );
 let records =
   JSON.parse(
     localStorage.getItem("records")
