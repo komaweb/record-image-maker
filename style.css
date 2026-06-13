@@ -168,10 +168,10 @@ summary {
 
   width: 100%;
 
-  overflow: visible;
+  overflow-x: hidden;
+  overflow-y: visible;
 
 }
-
 #previewArea {
 
   width: 950px;
