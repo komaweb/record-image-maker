@@ -194,8 +194,9 @@ summary {
 
   transform-origin: top left;
 
-}
-.preview-header {
+  display: inline-block;
+
+}.preview-header {
 
   display: flex;
 
