@@ -596,6 +596,16 @@ select {
   font-size: 14px;
 
 }
+#saveBtn,
+#deleteBtn {
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 #deleteBtn {
 
   margin-top: 15px;
