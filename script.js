@@ -43,6 +43,7 @@ todayBtn.addEventListener(
     ).value =
       `${year}/${month}/${day}(${weekday})`;
 
+    saveSettings();
     updatePreview();
 
   }
