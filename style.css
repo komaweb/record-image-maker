@@ -164,8 +164,8 @@ summary {
   border: 1px solid #EAEAEA;
 
   box-shadow:
-    0 8px 40px rgba(0, 0, 0, 0.22);
-  padding: 20px;
+    0 15px 40px rgba(0, 0, 0, 0.22);
+  padding: 50px;
 
   margin-top: 10px;
 
@@ -685,7 +685,4 @@ hr {
 
   margin-right: calc(50% - 150px);
 
-}
-#previewArea {
-  padding-bottom: 35px;
 }
