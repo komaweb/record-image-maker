@@ -1050,9 +1050,8 @@ function resizePreview() {
 
   preview.style.transform =
     `scale(${scale})`;
-
-  preview.style.transformOrigin =
-    "top center";
+preview.style.transformOrigin =
+  "top left";
 
   wrapper.style.height =
     `${Math.ceil(
