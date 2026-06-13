@@ -1369,7 +1369,8 @@ document.querySelector(
     resizePreview();
   }
 );
-
+document.title =
+  wrapper.clientWidth;
 console.log(`
 戦績画像メーカー
 
