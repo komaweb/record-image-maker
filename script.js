@@ -1044,22 +1044,22 @@ function resizePreview() {
 
   const scale =
     Math.min(
-      (wrapper.clientWidth / 950,
+      wrapper.clientWidth / 950,
       1
     );
 
   preview.style.transform =
     `scale(${scale})`;
-preview.style.transformOrigin =
-  "top left";
+
+  preview.style.transformOrigin =
+    "top left";
 
   wrapper.style.height =
     `${Math.ceil(
       preview.getBoundingClientRect().height
     ) + 25}px`;
 
-}
-window.addEventListener(
+}window.addEventListener(
   "resize",
   resizePreview
 );
