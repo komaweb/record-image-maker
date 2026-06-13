@@ -1001,18 +1001,21 @@ function resizePreview() {
     );
 
   const scale =
-  Math.min(
-    (wrapper.clientWidth - 20) / 950,
-    1
-  );
+    Math.min(
+      (wrapper.clientWidth - 20) / 950,
+      1
+    );
 
   preview.style.transform =
     `scale(${scale})`;
-wrapper.style.height =
-  `${preview.offsetHeight * scale + 50}px`;
+
+  preview.style.transformOrigin =
+    "top left";
+
+  wrapper.style.height =
+    `${preview.scrollHeight * scale}px`;
 
 }
-
 window.addEventListener(
   "resize",
   resizePreview
