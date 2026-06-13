@@ -1053,8 +1053,7 @@ function resizePreview() {
     "top left";
 
   wrapper.style.height =
-    `${preview.scrollHeight * scale}px`;
-
+  `${preview.getBoundingClientRect().height}px`;
 }
 window.addEventListener(
   "resize",
