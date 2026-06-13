@@ -472,7 +472,7 @@ body {
 
   display: flex;
 
-  justify-content: space-between;
+  justify-content: flex-end;
 
   align-items: center;
 
@@ -546,8 +546,6 @@ select {
 #todayBtn {
 
   margin-top: 10px;
-  margin-left: 10px;
-
 }
 .rank-title {
 
