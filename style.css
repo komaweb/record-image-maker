@@ -164,10 +164,7 @@ summary {
   border: 1px solid #EAEAEA;
 
   box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.22);
-  padding: 50px;
-
-  margin-top: 10px;
+    0 15px 50px rgba(0, 0, 0, 0.22);
 
 }
 .preview-wrapper {
