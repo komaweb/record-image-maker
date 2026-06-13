@@ -597,15 +597,14 @@ select {
 
   border-radius: 20px;
 
-  padding: 20px;
+  overflow: hidden;
 
   margin-top: 20px;
 
-  overflow: hidden;
-
   box-sizing: border-box;
 
-}.image-note {
+}
+.image-note {
 
   margin-top: 8px;
 
