@@ -832,12 +832,6 @@ document
     }
   );
 
-document
-  .getElementById("tournamentName")
-  .addEventListener(
-    "input",
-    updatePreview
-  );
 
 document
   .getElementById("tournamentName")
