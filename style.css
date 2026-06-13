@@ -172,9 +172,8 @@ summary {
 }
 .preview-wrapper {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
 }
-
 body {
   overflow-x: hidden;
 }
