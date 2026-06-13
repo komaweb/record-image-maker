@@ -580,24 +580,22 @@ select {
 
   border-radius: 20px;
 
-  padding: 20px;
-
   margin-top: 20px;
 
   overflow: hidden;
 
   box-sizing: border-box;
 
+  padding: 0;
+
 }
 .preview-header-image-card img {
 
   width: 100%;
 
-  height: 100%;
+  height: auto;
 
   display: block;
-
-  object-fit: cover;
 
 }
 .image-note {
