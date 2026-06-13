@@ -529,6 +529,9 @@ removeHeaderImageBtn.addEventListener(
 
     updatePreview();
 
+setTimeout(() => {
+  resizePreview();
+}, 50);
   }
 );
 
