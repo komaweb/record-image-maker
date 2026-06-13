@@ -1064,11 +1064,17 @@ window.addEventListener(
 
 resizePreview();
 
+const saveImageBtn =
+  document.getElementById(
+    "saveImageBtn"
+  );
+
 const resetBtn =
   document.getElementById(
     "resetBtn"
-  );loadSettings();
+  );
 
+loadSettings();
 updateRecordView();
 updatePreview();
 
