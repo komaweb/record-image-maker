@@ -580,28 +580,32 @@ select {
 
   border-radius: 20px;
 
-  overflow: hidden;
+  padding: 20px;
 
   margin-top: 20px;
 
-  width: 100%;
+  overflow: hidden;
 
-  height: auto;
-
-  display: block;
+  box-sizing: border-box;
 
 }
+.preview-header-image-card {
 
-.preview-header-image-card img {
+  background: white;
 
-  width: 100%;
+  border: 2px solid #DDDDDD;
 
-  height: auto;
+  border-radius: 20px;
 
-  display: block;
+  padding: 20px;
 
-}
-.image-note {
+  margin-top: 20px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+}.image-note {
 
   margin-top: 8px;
 
