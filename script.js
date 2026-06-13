@@ -1296,21 +1296,6 @@ function loadSettings() {
   }
 
 
-  if (savedImage) {
-
-    const img =
-      new Image();
-
-    img.onload = () => {
-
-
-    };
-
-    img.src =
-      savedImage;
-
-  }
-
 }
 resetBtn.addEventListener(
   "click",
