@@ -71,7 +71,11 @@ gtag('config', 'G-G0V6WFMYGN');
 
 </details>
 
+<details open>
 
+  <summary>
+    対戦結果を入力
+  </summary>
 <div class="match-input-card">
 
   <div class="match-input-title">
@@ -169,29 +173,14 @@ gtag('config', 'G-G0V6WFMYGN');
 <button id="deleteBtn">
   ひとつ前に入力した対戦結果を削除
 </button>
-<br><br>
-<button id="resetBtn">
-  新しい大会の入力を始める
-</button>
+  </details>
 <br><br>
 <details>
-  
-  <summary>
-    大会情報と最終順位
-  </summary>
+    <details open>
 
-<h3 class="section-title">
-  大会の基本情報を入力
-  </h3>
-  
-<div class="field-title">
-  自分の使用デッキ
-</div>
-<input
-  type="text"
-  id="myDeck"
->
-  <br><br>
+  <summary>
+    ヘッダー画像設定
+  </summary>
 <div class="field-title">
   ヘッダー画像（任意）
 </div><div>
@@ -214,8 +203,26 @@ gtag('config', 'G-G0V6WFMYGN');
 >
   ヘッダー画像を削除
 </button>
+    </details>
 
-<br><br>
+
+  
+  <summary>
+    大会情報と最終順位
+  </summary>
+
+<h3 class="section-title">
+  大会の基本情報を入力
+  </h3>
+  
+<div class="field-title">
+  自分の使用デッキ
+</div>
+<input
+  type="text"
+  id="myDeck"
+>
+  <br><br>
 
 <div class="field-title">
   大会名
@@ -298,6 +305,11 @@ gtag('config', 'G-G0V6WFMYGN');
   
   
 </details>
+    
+<button id="resetBtn">
+  新しい大会の入力を始める
+</button>
+<br><br>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'></script><script  src="./script.js"></script>
 
   </body>
