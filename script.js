@@ -1053,9 +1053,8 @@ function resizePreview() {
 
   preview.style.transformOrigin =
     "top left";
-
-  wrapper.style.height =
-  `${preview.getBoundingClientRect().height}px`;
+wrapper.style.height =
+  `${preview.scrollHeight * scale}px`;
 }
 window.addEventListener(
   "resize",
