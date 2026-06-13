@@ -183,7 +183,7 @@ body {
   transform-origin: top left;
   display: block;
 }
-preview-header {
+.preview-header {
 
   display: flex;
 
@@ -601,7 +601,7 @@ select {
   display: block;
 }
 
-＃removeHeaderImageBtn {
+#removeHeaderImageBtn {
 
   margin-top: 30px;
 
@@ -685,7 +685,4 @@ hr {
 
   margin-right: calc(50% - 150px);
 
-}
-#previewArea {
-  visibility: hidden;
 }
