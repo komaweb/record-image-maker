@@ -1043,28 +1043,23 @@ function resizePreview() {
     );
 
   const scale =
-  Math.min(
-    (wrapper.clientWidth -30)/ 950,
-    1
-  );
+    Math.min(
+      (wrapper.clientWidth - 30) / 950,
+      1
+    );
 
-preview.style.transform =
-  `scale(${scale})`;
+  preview.style.transform =
+    `scale(${scale})`;
 
-preview.style.transformOrigin =
-  "top left";
+  preview.style.transformOrigin =
+    "top center";
 
-const scaledWidth =
-  950 * scale;
+  wrapper.style.height =
+    `${Math.ceil(
+      preview.getBoundingClientRect().height
+    ) + 25}px`;
 
-preview.style.marginLeft =
-  `${(wrapper.clientWidth - scaledWidth) / 2}px`;
-
-wrapper.style.height =
-  `${Math.ceil(
-    preview.getBoundingClientRect().height
-  ) + 25}px`;}
-
+}
 window.addEventListener(
   "resize",
   resizePreview
