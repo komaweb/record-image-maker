@@ -622,7 +622,6 @@ details[open] summary {
   margin-bottom: 25px;
 
 }
-
 #resetBtn {
 
   display: block;
@@ -633,7 +632,9 @@ details[open] summary {
 
   border: 1px solid #C62828;
 
-  .section-description {
+}
+
+.section-description {
 
   color: #888;
 
@@ -641,7 +642,6 @@ details[open] summary {
 
   margin-bottom: 25px;
 
-}
 }
 
 
