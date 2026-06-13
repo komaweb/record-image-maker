@@ -1009,7 +1009,7 @@ function resizePreview() {
   preview.style.transform =
     `scale(${scale})`;
 wrapper.style.height =
-  `${preview.offsetHeight * scale + 20}px`;
+  `${preview.offsetHeight * scale + 50}px`;
 
 }
 
