@@ -443,6 +443,40 @@ const customResult =
   document.getElementById(
     "customResult"
   );
+const headerImageInput =
+  document.getElementById(
+    "headerImageInput"
+  );
+
+headerImageInput.addEventListener(
+  "change",
+  event => {
+
+    const file =
+      event.target.files[0];
+
+    if (!file) return;
+
+    const reader =
+      new FileReader();
+
+    reader.onload = () => {
+
+      localStorage.setItem(
+        "headerImage",
+        reader.result
+      );
+
+      updatePreview();
+
+    };
+
+    reader.readAsDataURL(
+      file
+    );
+
+  }
+);
 
 finalResult.addEventListener(
   "change",
@@ -488,12 +522,34 @@ function updatePreview() {
     document.getElementById(
       "tournamentDate"
     ).value;
+  
+  const headerImage =
+  localStorage.getItem(
+    "headerImage"
+  );
+  
 const extraInfos =
   document.querySelectorAll(
     ".extraInfo"
   );
 
 let extraHtml = "";
+  let headerImageHtml = "";
+
+if (headerImage) {
+
+  headerImageHtml = `
+    <div class="preview-header-image-card">
+
+      <img
+        src="${headerImage}"
+        alt=""
+      >
+
+    </div>
+  `;
+
+}
 
 extraInfos.forEach(input => {
 
@@ -785,6 +841,7 @@ previewArea.innerHTML = `
     </div>
 
   </div>
+  ${headerImageHtml}
 <div class="preview-match-card">
 
   <div class="preview-card-title">
