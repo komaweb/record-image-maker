@@ -625,3 +625,15 @@ details[open] summary {
   margin-bottom: 25px;
 
 }
+
+#resetBtn {
+
+  display: block;
+
+  margin-left: auto;
+
+  color: #C62828;
+
+  border: 1px solid #C62828;
+
+}
