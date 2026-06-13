@@ -1057,6 +1057,8 @@ wrapper.style.height =
   `${Math.ceil(
     preview.getBoundingClientRect().height
   ) + 10}px`;
+}
+
 window.addEventListener(
   "resize",
   resizePreview
@@ -1078,6 +1080,10 @@ loadSettings();
 updateRecordView();
 updatePreview();
 
+document.getElementById(
+  "previewArea"
+).style.visibility = "visible";
+
 if (
   finalResult.value ===
   "その他(自分で入力)"
@@ -1088,7 +1094,6 @@ if (
 
 }
 updatePreview();
-
 saveImageBtn.addEventListener(
   "click",
   async () => {
@@ -1362,11 +1367,9 @@ document.querySelector(
     updateRecordView();
     updatePreview();
     resizePreview();
-document.getElementById(
-  "previewArea"
-).style.visibility = "visible";
   }
 );
+
 console.log(`
 戦績画像メーカー
 
