@@ -1288,11 +1288,8 @@ function loadSettings() {
         input.type = "text";
         input.className =
           "extraInfo";
-
-        input.placeholder =
-          index === 0
-            ? "参加人数 50人"
-            : "項目を入力";
+input.placeholder =
+  "項目を入力";
 
         input.value = value;
 
@@ -1360,12 +1357,12 @@ document.querySelector(
   'input[name="result"][value="勝"]'
 ).checked = true;
     extraInfoArea.innerHTML = `
-      <input
-        type="text"
-        class="extraInfo"
-        placeholder="参加人数 50人"
-      >
-    `;
+  <input
+    type="text"
+    class="extraInfo"
+    placeholder="項目を入力"
+  >
+`;
 
     updateRecordView();
     updatePreview();
