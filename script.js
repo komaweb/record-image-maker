@@ -809,8 +809,8 @@ const displayPlay =
   currentPlay || "";
 
 const displayCurrentResult =
-  currentResult || "";
-let currentMatchHtml = "";
+  currentResult || "未";
+  let currentMatchHtml = "";
 
 const totalMatches =
   records.yosen.length +
