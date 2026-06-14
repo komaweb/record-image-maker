@@ -755,13 +755,26 @@ const currentResult =
 
 let currentMatchHtml = "";
 
-if (currentDeck) {
+const totalMatches =
+  records.yosen.length +
+  records.honsen.length;
+
+const displayDeckName =
+  currentDeck ||
+  (totalMatches === 0
+    ? "デッキ名を入力"
+    : "");
+
+if (
+  displayDeckName ||
+  totalMatches === 0
+) {
 
   currentMatchHtml = `
     <div class="preview-match-row">
 
       <span class="preview-deck-name">
-        ${currentDeck}
+        ${displayDeckName}
       </span>
 
       <div class="preview-tags">
