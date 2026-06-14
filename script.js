@@ -982,9 +982,11 @@ honsenResultClass = "";
 
 }
   let honsenCardHtml = "";
-  if (
-  records.honsen.length > 0
-) {
+if (
+  records.honsen.length > 0 ||
+  currentPhase === "本戦"
+)
+  {
 
   honsenCardHtml = `
     <div class="preview-match-card">
