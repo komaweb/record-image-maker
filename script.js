@@ -1030,7 +1030,10 @@ document
 
     }
   );
-
+deckName.addEventListener(
+  "input",
+  updatePreview
+);
 
 document
   .getElementById("tournamentName")
