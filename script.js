@@ -746,7 +746,11 @@ const currentResult =
   document.querySelector(
     'input[name="result"]:checked'
   ).value;
+const displayPlay =
+  currentPlay || "";
 
+const displayResult =
+  currentResult || "";
 let currentMatchHtml = "";
 
 const totalMatches =
