@@ -487,20 +487,12 @@ body {
   min-width: 0;
 
 }
-
 .preview-tags {
-
   display: flex;
-
-  gap: 10px;
-
-  flex-shrink: 0;
   width: 180px;
-
   justify-content: flex-end;
-  white-space: nowrap;
-
 }
+
 #finalResult {
   margin-top: 15px;
 }
@@ -698,4 +690,9 @@ display: inline-block;
 
   color: transparent;
 
+}
+.preview-tags {
+  display: flex;
+  width: 180px;
+  justify-content: flex-end;
 }
