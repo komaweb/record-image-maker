@@ -290,7 +290,13 @@ localStorage.setItem(
 );
 
 deckName.value = "";
+document.querySelector(
+  'input[name="play"][value=""]'
+).checked = true;
 
+document.querySelector(
+  'input[name="result"][value=""]'
+).checked = true;
 
 updateRecordView();
 updatePreview();
