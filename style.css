@@ -485,7 +485,7 @@ body {
 
 }
 
-..preview-tags {
+.preview-tags {
   width: 170px;
   display: flex;
   justify-content: flex-end;
