@@ -764,6 +764,48 @@ if (
     "status-progress";
 
 }
+  const currentDeck =
+  document.getElementById(
+    "deckName"
+  ).value.trim();
+
+const currentPlay =
+  document.querySelector(
+    'input[name="play"]:checked'
+  ).value;
+
+const currentResult =
+  document.querySelector(
+    'input[name="result"]:checked'
+  ).value;
+
+let currentMatchHtml = "";
+
+if (currentDeck) {
+
+  currentMatchHtml = `
+    <div class="preview-match-row">
+
+      <span class="preview-deck-name">
+        ${currentDeck}
+      </span>
+
+      <div class="preview-tags">
+
+        <span class="preview-play-tag ${currentPlay}">
+          ${currentPlay}
+        </span>
+
+        <span class="preview-result-tag ${currentResult}">
+          ${currentResult}
+        </span>
+
+      </div>
+
+    </div>
+  `;
+
+}
 let yosenHtml = "";
 
 records.yosen.forEach(record => {
