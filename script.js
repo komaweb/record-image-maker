@@ -906,10 +906,7 @@ records.honsen.forEach(record => {
   }
 
 });
-const currentPhase =
-  document.querySelector(
-    'input[name="phase"]:checked'
-  ).value;
+
 
 if (
   currentPhase === "予選" &&
