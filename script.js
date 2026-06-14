@@ -781,8 +781,8 @@ if (
 
       <div class="preview-tags">
 
-        <span class="preview-play-tag ${currentPlay}">
-          ${currentPlay}
+        <span class="preview-play-tag ${displayPlay}">
+       ${displayPlay}
         </span>
 
         <span class="preview-result-tag ${currentResult}">
