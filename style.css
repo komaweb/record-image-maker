@@ -683,7 +683,7 @@ input::placeholder {
 }
 .preview-placeholder {
 
-border: 2px dashed #DDDDDD;
+border: 2px dashed #000;
 padding: 4px 12px;
 border-radius: 10px;
 display: inline-block;
