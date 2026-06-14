@@ -805,7 +805,7 @@ const displayPlay =
   currentPlay || "";
 
 const displayCurrentResult =
-  currentResult || "未";  
+  currentResult || "";  
 let currentMatchHtml = "";
 
 const totalMatches =
