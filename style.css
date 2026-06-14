@@ -310,7 +310,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 65px;
+  
   padding: 4px 10px;
 
   border-radius: 8px;
@@ -349,9 +349,6 @@ body {
 
   color: #666666;
 
-}
-.preview-result-tag.empty-result {
-  color: transparent;
 }
 .preview-record {
 
@@ -487,12 +484,18 @@ body {
   min-width: 0;
 
 }
-.preview-tags {
-  display: flex;
-  width: 180px;
-  justify-content: flex-end;
-}
 
+.preview-tags {
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  white-space: nowrap;
+
+}
 #finalResult {
   margin-top: 15px;
 }
@@ -685,14 +688,4 @@ padding: 4px 12px;
 border-radius: 14px;
 display: inline-block;
 
-}
-.preview-result-tag:not(.勝):not(.負) {
-
-  color: transparent;
-
-}
-.preview-tags {
-  display: flex;
-  width: 180px;
-  justify-content: flex-end;
 }
