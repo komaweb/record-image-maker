@@ -284,6 +284,16 @@ updatePreview();
 
 deckName.value = "";
 
+document.querySelector(
+  'input[name="play"][value="先攻"]'
+).checked = true;
+
+document.querySelector(
+  'input[name="result"][value="勝"]'
+).checked = true;
+
+updatePreview();
+
   }
 );
 
