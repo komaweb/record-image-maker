@@ -996,9 +996,8 @@ previewArea.innerHTML = `
   <div class="preview-card-title">
   予選
 </div>
-
-${currentMatchHtml}
 ${yosenHtml}
+${currentMatchHtml}
 
 <div class="preview-summary">
 
