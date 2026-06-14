@@ -81,9 +81,15 @@ let yosenLose = 0;
 records.yosen.forEach(record => {
 
   if (record.result === "勝") {
+
     yosenWin++;
-  } else {
+
+  } else if (
+    record.result === "負"
+  ) {
+
     yosenLose++;
+
   }
 
 });
@@ -114,17 +120,19 @@ function updateRecordView() {
 
   records.honsen.forEach(record => {
 
-    if (record.result === "勝") {
+  if (record.result === "勝") {
 
-      honsenWin++;
+    honsenWin++;
 
-    } else {
+  } else if (
+    record.result === "負"
+  ) {
 
-      honsenLose++;
+    honsenLose++;
 
-    }
+  }
 
-  });
+});
 
 
 const totalWin =
