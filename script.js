@@ -995,6 +995,7 @@ honsenResultClass = "";
       </div>
 
       ${honsenHtml}
+      ${currentHonsenHtml}
 
       <div class="preview-summary">
 
