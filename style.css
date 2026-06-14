@@ -70,13 +70,13 @@ button {
   margin-bottom: 10px;
 }
 
-.tags {
+.s {
   display: flex;
 
   gap: 10px;
 }
 
-.play-tag {
+.play- {
   background: #E8F5E9;
   color: #2E7D32;
 
@@ -85,7 +85,7 @@ button {
   border-radius: 8px;
 }
 
-.result-tag {
+.result- {
   padding: 6px 12px;
 
   border-radius: 8px;
@@ -350,6 +350,14 @@ body {
   color: #666666;
 
 }
+.preview-result-tag.  {
+
+  background: # FFF;
+
+  color: # FFF;
+
+}
+
 .preview-record {
 
   margin-top: 16px;
@@ -688,8 +696,4 @@ padding: 4px 12px;
 border-radius: 14px;
 display: inline-block;
 
-}
-.preview-play-tag,
-.preview-result-tag {
-  white-space: nowrap;
 }
