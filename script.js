@@ -279,9 +279,6 @@ localStorage.setItem(
   JSON.stringify(records)
 );
 
-updateRecordView();
-updatePreview();
-
 deckName.value = "";
 
 document.querySelector(
@@ -292,41 +289,8 @@ document.querySelector(
   'input[name="result"][value="勝"]'
 ).checked = true;
 
+updateRecordView();
 updatePreview();
-
-  }
-);
-
-deleteBtn.addEventListener(
-  "click",
-  () => {
-
-    if (
-      records.yosen.length === 0 &&
-      records.honsen.length === 0
-    ) {
-      return;
-    }
-
-    if (
-      records.honsen.length > 0
-    ) {
-
-      records.honsen.pop();
-
-    } else {
-
-      records.yosen.pop();
-
-    }
-
-    localStorage.setItem(
-      "records",
-      JSON.stringify(records)
-    );
-
-    updateRecordView();
-    updatePreview();
 
   }
 );
