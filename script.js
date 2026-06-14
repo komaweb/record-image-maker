@@ -1034,6 +1034,18 @@ deckName.addEventListener(
   "input",
   updatePreview
 );
+document
+  .querySelectorAll(
+    'input[name="play"], input[name="result"]'
+  )
+  .forEach(input => {
+
+    input.addEventListener(
+      "change",
+      updatePreview
+    );
+
+  });
 
 document
   .getElementById("tournamentName")
