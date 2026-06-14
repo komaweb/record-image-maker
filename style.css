@@ -683,8 +683,6 @@ input::placeholder {
 }
 .preview-placeholder {
 
-  font-size: 40px;
-
-  color: #888;
+  font-size: 30px;
 
 }
