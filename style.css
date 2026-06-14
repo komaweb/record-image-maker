@@ -689,3 +689,7 @@ border-radius: 14px;
 display: inline-block;
 
 }
+.preview-play-tag,
+.preview-result-tag {
+  white-space: nowrap;
+}
