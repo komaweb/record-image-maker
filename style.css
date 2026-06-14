@@ -692,3 +692,8 @@ border-radius: 14px;
 display: inline-block;
 
 }
+.preview-result-tag:not(.勝):not(.負) {
+
+  color: transparent;
+
+}
