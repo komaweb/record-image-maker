@@ -813,6 +813,27 @@ if (
   `;
 
 }
+  let currentYosenHtml = "";
+let currentHonsenHtml = "";
+
+const currentPhase =
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
+
+if (
+  currentPhase === "予選"
+) {
+
+  currentYosenHtml =
+    currentMatchHtml;
+
+} else {
+
+  currentHonsenHtml =
+    currentMatchHtml;
+
+}
 let yosenHtml = "";
 
 records.yosen.forEach(record => {
