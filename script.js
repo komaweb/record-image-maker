@@ -993,10 +993,10 @@ honsenResultClass = "";
       <div class="preview-card-title">
         本戦
       </div>
+${honsenHtml}
+${currentHonsenHtml}
 
-      ${honsenHtml}
-
-      <div class="preview-summary">
+<div class="preview-summary">>
 
 <span class="preview-score-label">
   総合戦績
