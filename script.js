@@ -875,7 +875,46 @@ records.honsen.forEach(record => {
   }
 
 });
+const currentPhase =
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
 
+if (
+  currentPhase === "予選" &&
+  currentResult === "勝"
+) {
+
+  yosenWin++;
+
+}
+
+if (
+  currentPhase === "予選" &&
+  currentResult === "負"
+) {
+
+  yosenLose++;
+
+}
+
+if (
+  currentPhase === "本戦" &&
+  currentResult === "勝"
+) {
+
+  honsenWin++;
+
+}
+
+if (
+  currentPhase === "本戦" &&
+  currentResult === "負"
+) {
+
+  honsenLose++;
+
+}
 const totalWin =
   yosenWin + honsenWin;
 
