@@ -796,20 +796,16 @@ if (
     "deckName"
   ).value.trim();
 
-const currentPlay =
-  document.querySelector(
-    'input[name="play"]:checked'
-  ).value;
-
 const currentResult =
   document.querySelector(
     'input[name="result"]:checked'
   ).value;
+
 const displayPlay =
   currentPlay || "";
 
 const displayCurrentResult =
-  currentResult || "";
+  currentResult || "未";  
 let currentMatchHtml = "";
 
 const totalMatches =
