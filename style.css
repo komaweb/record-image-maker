@@ -681,3 +681,10 @@ hr {
 input::placeholder {
   text-align: left;
 }
+.preview-placeholder {
+
+  font-size: 40px;
+
+  color: #888;
+
+}
