@@ -1033,7 +1033,7 @@ ${headerImageHtml}
   予選
 </div>
 ${yosenHtml}
-${currentMatchHtml}
+${currentYosenHtml}
 
 <div class="preview-summary">
 
