@@ -310,7 +310,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
+  width: 65px;
   padding: 4px 10px;
 
   border-radius: 8px;
@@ -349,6 +349,9 @@ body {
 
   color: #666666;
 
+}
+.preview-result-tag.empty-result {
+  color: transparent;
 }
 .preview-record {
 
@@ -484,13 +487,12 @@ body {
   min-width: 0;
 
 }
-
 .preview-tags {
-  width: 170px;
   display: flex;
+  width: 180px;
   justify-content: flex-end;
-  gap: 10px;
 }
+
 #finalResult {
   margin-top: 15px;
 }
@@ -684,6 +686,13 @@ border-radius: 14px;
 display: inline-block;
 
 }
-.preview-match-row {
-  position: relative;
+.preview-result-tag:not(.勝):not(.負) {
+
+  color: transparent;
+
+}
+.preview-tags {
+  display: flex;
+  width: 180px;
+  justify-content: flex-end;
 }
