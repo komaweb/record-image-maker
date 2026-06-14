@@ -758,13 +758,17 @@ let currentMatchHtml = "";
 const totalMatches =
   records.yosen.length +
   records.honsen.length;
+let displayDeckName = currentDeck;
 
-const displayDeckName =
-  currentDeck ||
-  (totalMatches === 0
-    ? "[ここに対戦相手のデッキ名が表示されます]"
-    : "");
+if (
+  totalMatches === 0 &&
+  !currentDeck
+) {
 
+  displayDeckName =
+    '<span class="preview-placeholder">[ここに対戦相手のデッキ名が表示されます]</span>';
+
+}
 if (
   displayDeckName ||
   totalMatches === 0
@@ -960,11 +964,14 @@ previewArea.innerHTML = `
   使用デッキ
 </div>
   <div class="preview-deck">
-  ${deck || "[ここに自分のデッキ名が表示されます]"}
-</div>
+  ${deck
+  ? deck
+  : '<span class="preview-placeholder">[ここに自分のデッキ名が表示されます]</span>'
+}
 
-  </div>
-  ${headerImageHtml}
+</div>
+</div>
+${headerImageHtml}
 <div class="preview-match-card">
 
   <div class="preview-card-title">
