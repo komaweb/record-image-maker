@@ -303,6 +303,47 @@ updatePreview();
 
   }
 );
+deleteBtn.addEventListener(
+  "click",
+  () => {
+
+    const phase =
+      document.querySelector(
+        'input[name="phase"]:checked'
+      ).value;
+
+    if (phase === "予選") {
+
+      if (
+        records.yosen.length === 0
+      ) {
+        return;
+      }
+
+      records.yosen.pop();
+
+    } else {
+
+      if (
+        records.honsen.length === 0
+      ) {
+        return;
+      }
+
+      records.honsen.pop();
+
+    }
+
+    localStorage.setItem(
+      "records",
+      JSON.stringify(records)
+    );
+
+    updateRecordView();
+    updatePreview();
+
+  }
+);
 const phaseRadios =
   document.querySelectorAll(
     'input[name="phase"]'
