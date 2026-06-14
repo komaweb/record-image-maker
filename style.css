@@ -485,16 +485,11 @@ body {
 
 }
 
-.preview-tags {
-
+..preview-tags {
+  width: 170px;
   display: flex;
-
+  justify-content: flex-end;
   gap: 10px;
-
-  flex-shrink: 0;
-
-  white-space: nowrap;
-
 }
 #finalResult {
   margin-top: 15px;
