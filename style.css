@@ -684,3 +684,13 @@ border-radius: 14px;
 display: inline-block;
 
 }
+.preview-match-row {
+  position: relative;
+}
+
+.preview-tags {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
