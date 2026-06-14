@@ -350,6 +350,9 @@ body {
   color: #666666;
 
 }
+.preview-result-tag.empty-result {
+  color: transparent;
+}
 .preview-record {
 
   margin-top: 16px;
