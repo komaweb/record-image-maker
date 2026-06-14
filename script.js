@@ -858,7 +858,10 @@ if (
   let currentYosenHtml = "";
 let currentHonsenHtml = "";
 
-
+const currentPhase =
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
 if (
   currentPhase === "予選"
 ) {
