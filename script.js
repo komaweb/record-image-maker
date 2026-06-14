@@ -984,10 +984,11 @@ previewArea.innerHTML = `
 <div class="preview-match-card">
 
   <div class="preview-card-title">
-    予選
-  </div>
+  予選
+</div>
 
-  ${yosenHtml}
+${currentMatchHtml}
+${yosenHtml}
 
 <div class="preview-summary">
 
