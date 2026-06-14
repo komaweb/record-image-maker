@@ -899,7 +899,9 @@ records.honsen.forEach(record => {
 
     honsenWin++;
 
-  } else {
+  } else if (
+    record.result === "負"
+  ) {
 
     honsenLose++;
 
