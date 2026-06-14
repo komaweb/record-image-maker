@@ -407,7 +407,8 @@ removeInfoBtn.addEventListener(
 
 lastInput.remove();
 
-saveSettings();
+saveSettings()
+  updatePreview();
 
 }
 );
