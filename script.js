@@ -795,12 +795,7 @@ if (
   document.getElementById(
     "deckName"
   ).value.trim();
-  
-const currentPlay =
-  document.querySelector(
-    'input[name="play"]:checked'
-  ).value;
-  
+
 const currentResult =
   document.querySelector(
     'input[name="result"]:checked'
@@ -858,6 +853,10 @@ if (
   let currentYosenHtml = "";
 let currentHonsenHtml = "";
 
+const currentPhase =
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
 
 if (
   currentPhase === "予選"
