@@ -648,13 +648,15 @@ records.yosen.forEach(record => {
 
   if (record.result === "勝") {
 
-    yosenWin++;
+  yosenWin++;
 
-  } else {
+} else if (
+  record.result === "負"
+) {
 
-    yosenLose++;
+  yosenLose++;
 
-  }
+}
 
 });
 let resultText = "";
