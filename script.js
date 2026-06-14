@@ -762,7 +762,7 @@ const totalMatches =
 const displayDeckName =
   currentDeck ||
   (totalMatches === 0
-    ? "デッキ名を入力"
+    ? "[ここに対戦相手のデッキ名が表示されます]"
     : "");
 
 if (
