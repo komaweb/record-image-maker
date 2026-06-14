@@ -1452,12 +1452,12 @@ document.getElementById(
 document.getElementById(
   "customResult"
 ).value = "";
-    document.querySelector(
-  'input[name="play"][value="先攻"]'
+document.querySelector(
+  'input[name="play"][value=""]'
 ).checked = true;
 
 document.querySelector(
-  'input[name="result"][value="勝"]'
+  'input[name="result"][value=""]'
 ).checked = true;
     extraInfoArea.innerHTML = `
   <input
