@@ -749,7 +749,7 @@ const currentResult =
 const displayPlay =
   currentPlay || "";
 
-const displayResult =
+const displayCurrentResult =
   currentResult || "";
 let currentMatchHtml = "";
 
