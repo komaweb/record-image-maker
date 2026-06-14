@@ -940,14 +940,13 @@ previewArea.innerHTML = `
 
   <div class="preview-header">
 
-    <div class="preview-title">
-      ${tournament || "大会名"}
-    </div>
+ <div class="preview-title">
+  ${tournament || ""}
+</div>
 
-    <div class="preview-date">
-      ${date || "開催日"}
-    </div>
-
+<div class="preview-date">
+  ${date || ""}
+</div>
   </div>
 
   <div class="preview-info-card">
@@ -956,15 +955,9 @@ previewArea.innerHTML = `
 
   </div>
 
-  <div class="preview-deck-card">
-
-    <div class="preview-label">
-      使用デッキ
-    </div>
-
-    <div class="preview-deck">
-      ${deck || "デッキ名"}
-    </div>
+  <div class="preview-deck-card"><div class="preview-deck">
+  ${deck || "[ここに自分のデッキ名が表示されます]"}
+</div>
 
   </div>
   ${headerImageHtml}
