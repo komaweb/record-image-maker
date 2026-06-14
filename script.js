@@ -766,7 +766,7 @@ if (
 ) {
 
   displayDeckName =
-    '<span class="preview-placeholder">《対戦相手のデッキ名》</span>';
+    '<span class="preview-placeholder">対戦相手のデッキ名</span>';
 
 }
 if (
@@ -966,7 +966,7 @@ previewArea.innerHTML = `
   <div class="preview-deck">
   ${deck
   ? deck
-  : '<span class="preview-placeholder">《自分のデッキ名》</span>'
+  : '<span class="preview-placeholder">自分のデッキ名</span>'
 }
 
 </div>
