@@ -813,27 +813,6 @@ if (
   `;
 
 }
-  let currentYosenHtml = "";
-let currentHonsenHtml = "";
-
-const currentPhase =
-  document.querySelector(
-    'input[name="phase"]:checked'
-  ).value;
-
-if (
-  currentPhase === "予選"
-) {
-
-  currentYosenHtml =
-    currentMatchHtml;
-
-} else {
-
-  currentHonsenHtml =
-    currentMatchHtml;
-
-}
 let yosenHtml = "";
 
 records.yosen.forEach(record => {
@@ -993,10 +972,10 @@ honsenResultClass = "";
       <div class="preview-card-title">
         本戦
       </div>
-${honsenHtml}
-${currentHonsenHtml}
 
-<div class="preview-summary">>
+      ${honsenHtml}
+
+      <div class="preview-summary">
 
 <span class="preview-score-label">
   総合戦績
