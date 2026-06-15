@@ -171,7 +171,6 @@ summary {
 
 }
 .preview-wrapper {
-  max-height: 180px;
   overflow: hidden;
 }
 .preview-wrapper.compact #previewArea {
