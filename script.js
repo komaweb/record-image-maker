@@ -570,7 +570,9 @@ height =
       );
 
       updatePreview();
-
+setTimeout(() => {
+  resizePreview();
+}, 100);
     } catch {
 
       alert(
