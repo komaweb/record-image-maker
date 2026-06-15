@@ -172,12 +172,6 @@ summary {
 }
 .preview-wrapper {
 
-  position: sticky;
-
-  top: 10px;
-
-  z-index: 100;
-
   width: 100%;
 
 }
@@ -711,21 +705,8 @@ display: inline-block;
   color: #FFFFFF;
 
 }
-.input-area {
+body.input-mode #previewArea {
 
-  padding-top: 380px;
-
-}
-.preview-wrapper.compact {
-
-  max-height: 180px;
-
-  overflow: hidden;
-
-}
-
-.preview-wrapper.compact #previewArea {
-
-  transform: scale(0.4);
+  opacity: 0.85;
 
 }
