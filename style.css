@@ -751,3 +751,10 @@ body.input-mode #previewArea {
   display: block;
 
 }
+.active-tab {
+
+  display: block !important;
+
+  border: 3px solid red;
+
+}
