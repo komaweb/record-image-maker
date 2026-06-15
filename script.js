@@ -1094,9 +1094,7 @@ previewArea.innerHTML = `
     ${extraHtml}
 
   </div>
-  
-<div class="preview-deck-card">
-  <div class="preview-label">
+  <div class="preview-deck-card">
   <div class="preview-label">
     使用デッキ
   </div>
