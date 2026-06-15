@@ -1570,32 +1570,6 @@ document.querySelector(
     resizePreview();
   }
 );
-document
-  .querySelectorAll(
-    'input[type="text"]'
-  )
-  .forEach(input => {
-
- document.addEventListener(
-  "focusin",
-  event => {
-
-    if (
-      event.target.matches(
-        'input[type="text"]'
-      )
-    ) {
-
-      document.body.classList.add(
-        "input-mode"
-      );
-
-      resizePreview();
-
-    }
-
-  }
-);
 
 document.addEventListener(
   "focusout",
