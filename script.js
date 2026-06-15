@@ -1241,12 +1241,15 @@ if (
 }
   preview.style.transform =
     `scale(${scale})`;
+preview.style.transform =
+  `scale(${scale})`;
 
-  preview.style.transformOrigin =
-    "top left";
+preview.style.transformOrigin =
+  "top left";
+
 wrapper.style.height =
   `${Math.ceil(
-    preview.getBoundingClientRect().height
+    preview.scrollHeight * scale
   ) + 20}px`;
 }
 
