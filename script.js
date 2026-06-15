@@ -1247,7 +1247,7 @@ if (
 wrapper.style.height =
   `${Math.ceil(
     preview.getBoundingClientRect().height
-  ) + 10}px`;
+  ) + 20}px`;
 }
 
 window.addEventListener(
