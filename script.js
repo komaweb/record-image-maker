@@ -648,10 +648,6 @@ function updatePreview() {
   document.querySelector(
     'input[name="phase"]:checked'
   ).value;
-  const currentPhase =
-  document.querySelector(
-    'input[name="phase"]:checked'
-  ).value;
   const headerImage =
   localStorage.getItem(
     "headerImage"
@@ -764,7 +760,7 @@ if (
   currentPhase === "本戦"
 ) {
   resultText =
-    "";
+  "本戦進出";
 
   resultClass =
     "status-win";
