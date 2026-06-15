@@ -730,16 +730,4 @@ body.input-mode #previewArea {
   transform-origin: top center;
 
 }
-#matchInputDetails,
-#infoTab,
-#imageTab {
-
-  display: none;
-
-}
-
-.active-tab {
-
-  display: block;
-
-}
+console.log(sections);
