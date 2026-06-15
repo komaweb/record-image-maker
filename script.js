@@ -834,7 +834,8 @@ if (
 
   displayDeckName = "　";
 
-}if (
+}
+  if (
   displayDeckName ||
   totalMatches === 0
 ) {
