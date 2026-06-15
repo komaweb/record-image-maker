@@ -730,3 +730,14 @@ body.input-mode #previewArea {
   transform-origin: top center;
 
 }
+details {
+
+  display: none;
+
+}
+
+details.active-tab {
+
+  display: block;
+
+}
