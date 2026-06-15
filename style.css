@@ -175,12 +175,14 @@ summary {
   position: fixed;
 
   top: 10px;
-
   left: 10px;
-
   right: 10px;
 
+  height: 260px;
+
   z-index: 100;
+
+  overflow: hidden;
 
 }
 body {
