@@ -172,17 +172,13 @@ summary {
 }
 .preview-wrapper {
 
-  position: fixed;
+  position: sticky;
 
   top: 10px;
-  left: 10px;
-  right: 10px;
 
   z-index: 100;
 
-  max-height: 45vh;
-
-  overflow: auto;
+  width: 100%;
 
 }
 body {
