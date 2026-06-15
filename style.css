@@ -5,7 +5,7 @@ body {
     sans-serif;
 
   padding: 10px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   background: #F5F5F7;
 }
@@ -746,16 +746,27 @@ body.input-mode #previewArea {
 }
 .bottom-tabs {
 
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
   display: flex;
 
   gap: 8px;
 
-  margin-top: 10px;
+  padding: 10px;
 
-  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  background: #F5F5F7;
+
+  z-index: 1000;
 
 }
-
 .tab-btn {
 
   flex: 1;
