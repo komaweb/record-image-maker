@@ -1576,15 +1576,44 @@ document
   )
   .forEach(input => {
 
-   input.addEventListener(
-  "focus",
-  () => {
+ document.addEventListener(
+  "focusin",
+  event => {
 
-    document.body.classList.add(
-      "input-mode"
-    );
+    if (
+      event.target.matches(
+        'input[type="text"]'
+      )
+    ) {
 
-    resizePreview();
+      document.body.classList.add(
+        "input-mode"
+      );
+
+      resizePreview();
+
+    }
+
+  }
+);
+
+document.addEventListener(
+  "focusout",
+  event => {
+
+    if (
+      event.target.matches(
+        'input[type="text"]'
+      )
+    ) {
+
+      document.body.classList.remove(
+        "input-mode"
+      );
+
+      resizePreview();
+
+    }
 
   }
 );
