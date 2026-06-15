@@ -517,8 +517,8 @@ reader.onload = () => {
         "canvas"
       );
 
-    const maxWidth = 10;
-const maxHeight = 2000;
+    const maxWidth = 2000;
+const maxHeight = 3000;
 
 let width =
   img.width;
