@@ -720,3 +720,16 @@ display: inline-block;
   color: #FFFFFF;
 
 }
+body.input-mode .preview-wrapper {
+
+  max-height: 180px;
+
+  overflow: hidden;
+
+}
+
+body.input-mode #previewArea {
+
+  transform: scale(0.35);
+
+}
