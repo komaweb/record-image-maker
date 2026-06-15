@@ -1653,7 +1653,8 @@ tabs.forEach(btn => {
     }
   );
 
-});sections.match.classList.add(
+});
+sections.match.classList.add(
   "active-tab"
 );
 document
