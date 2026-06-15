@@ -383,20 +383,25 @@ phaseRadios.forEach(radio => {
 
       }
 
-      if (
-        !confirm(message)
-      ) {
+   if (
+  !confirm(message)
+) {
 
-        document.querySelector(
-          `input[name="phase"][value="${previousPhase}"]`
-        ).checked = true;
+  document.querySelector(
+    `input[name="phase"][value="${previousPhase}"]`
+  ).checked = true;
 
-        return;
-      }
+  return;
+}
 
-      previousPhase =
-        newPhase;
+previousPhase =
+  newPhase;
+
 saveSettings();
+
+updatePreview();
+
+resizePreview();
     }
   );
 
