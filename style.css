@@ -184,6 +184,8 @@ summary {
 
   z-index: 100;
 
+　 height: 40vh;
+
 }
 body {
   overflow-x: hidden;
@@ -713,5 +715,10 @@ display: inline-block;
   background: #FFFFFF;
 
   color: #FFFFFF;
+
+}
+.input-area {
+
+  margin-top: 280px;
 
 }
