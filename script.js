@@ -517,7 +517,7 @@ reader.onload = () => {
         "canvas"
       );
 
-    const maxWidth = 1200;
+    const maxWidth = 10;
 const maxHeight = 2000;
 
 let width =
@@ -1250,7 +1250,7 @@ preview.style.transformOrigin =
 wrapper.style.height =
   `${Math.ceil(
     preview.scrollHeight * scale
-  ) + 20}px`;
+  ) + 80}px`;
 }
 
 window.addEventListener(
