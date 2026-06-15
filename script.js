@@ -1251,16 +1251,7 @@ if (inputDetails) {
           "compact",
           inputDetails.open
         );
-inputDetails.addEventListener(
-  "toggle",
-  () => {
 
-    console.log(
-      inputDetails.open
-    );
-
-  }
-);
       resizePreview();
 
     }
