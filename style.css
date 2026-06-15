@@ -482,20 +482,13 @@ body {
   color: #000;
   font-size: 38px;
     
-}
-.preview-header-row {
+}.preview-header-row {
 
   display: flex;
 
   justify-content: flex-end;
 
-  align-items: center;
-
-  gap: 12px;
-
   margin-bottom: 10px;
-
-  margin-top: 10px;
 
 }
 .preview-deck-name {
