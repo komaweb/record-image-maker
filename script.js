@@ -383,22 +383,20 @@ phaseRadios.forEach(radio => {
 
       }
 
-   if (
-  !confirm(message)
-) {
+      if (
+        !confirm(message)
+      ) {
 
-  document.querySelector(
-    `input[name="phase"][value="${previousPhase}"]`
-  ).checked = true;
+        document.querySelector(
+          `input[name="phase"][value="${previousPhase}"]`
+        ).checked = true;
 
-  return;
-}
+        return;
+      }
 
-previousPhase =
-  newPhase;
-
+      previousPhase =
+        newPhase;
 saveSettings();
-
     }
   );
 
@@ -587,12 +585,14 @@ removeHeaderImageBtn.addEventListener(
   "click",
   () => {
 
-    localStorage.setItem(
-  "headerImage",
-  compressedImage
-);
+    localStorage.removeItem(
+      "headerImage"
+    );
 
-updatePreview();
+    headerImageInput.value = "";
+
+
+    updatePreview();
 
 setTimeout(() => {
   resizePreview();
@@ -784,25 +784,14 @@ if (
 
 } else {
 
-  if (
-    records.honsen.length > 0 ||
-    currentPhase === "本戦"
-  ) {
-
-    resultText =
-      "本戦進出";
-
-  } else {
-
-    resultText =
-      "予選進行中";
-
-  }
+  resultText =
+    "予選進行中";
 
   resultClass =
     "status-progress";
 
-}  const currentDeck =
+}
+  const currentDeck =
   document.getElementById(
     "deckName"
   ).value.trim();
