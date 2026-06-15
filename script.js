@@ -399,8 +399,6 @@ previousPhase =
 
 saveSettings();
 
-updatePreview();
-
     }
   );
 
