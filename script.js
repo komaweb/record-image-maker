@@ -1605,6 +1605,88 @@ input.addEventListener(
   }
 );
   });
+const tabs =
+  document.querySelectorAll(
+    ".tab-btn"
+  );
+
+tabs.forEach(btn => {
+
+  btn.addEventListener(
+    "click",
+    () => {
+
+      document
+        .getElementById(
+          "matchInputDetails"
+        )
+        .open = false;
+
+      document
+        .getElementById(
+          "imageTab"
+        )
+        .open = false;
+
+      document
+        .getElementById(
+          "infoTab"
+        )
+        .open = false;
+
+      document
+        .querySelectorAll(
+          ".tab-btn"
+        )
+        .forEach(b => {
+
+          b.classList.remove(
+            "active"
+          );
+
+        });
+
+      btn.classList.add(
+        "active"
+      );
+
+      const tab =
+        btn.dataset.tab;
+
+      if (tab === "match") {
+
+        document
+          .getElementById(
+            "matchInputDetails"
+          )
+          .open = true;
+
+      }
+
+      if (tab === "info") {
+
+        document
+          .getElementById(
+            "infoTab"
+          )
+          .open = true;
+
+      }
+
+      if (tab === "image") {
+
+        document
+          .getElementById(
+            "imageTab"
+          )
+          .open = true;
+
+      }
+
+    }
+  );
+
+});
 console.log(`
 戦績画像メーカー
 
