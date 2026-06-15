@@ -1250,7 +1250,7 @@ preview.style.transformOrigin =
 wrapper.style.height =
   `${Math.ceil(
     preview.scrollHeight * scale
-  ) + 80}px`;
+  ) + 50}px`;
 }
 
 window.addEventListener(
