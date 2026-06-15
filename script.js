@@ -401,7 +401,6 @@ saveSettings();
 
 updatePreview();
 
-resizePreview();
     }
   );
 
