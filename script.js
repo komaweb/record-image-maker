@@ -833,6 +833,18 @@ if (
     '<span class="preview-placeholder">対戦相手のデッキ名</span>';
 
 }
+  const hasInput =
+  currentPlay ||
+  currentResult;
+
+if (
+  hasInput &&
+  !currentDeck
+) {
+
+  displayDeckName = "　";
+
+}
 if (
   displayDeckName ||
   totalMatches === 0
