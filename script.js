@@ -1216,12 +1216,12 @@ function resizePreview() {
   );
 
 if (
-  wrapper.classList.contains(
-    "compact"
+  document.body.classList.contains(
+    "input-mode"
   )
 ) {
 
-  scale *= 0.4;
+  scale *= 0.25;
 
 }
   preview.style.transform =
