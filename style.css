@@ -171,10 +171,18 @@ summary {
 
 }
 .preview-wrapper {
+
+  position: sticky;
+
+  top: 10px;
+
+  z-index: 100;
+
   width: 100%;
+
   height: auto;
-}
-body {
+
+}body {
   overflow-x: hidden;
 }
 #previewArea {
