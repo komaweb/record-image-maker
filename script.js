@@ -1654,17 +1654,18 @@ tabs.forEach(btn => {
   );
 
 });
+
 sections.match.classList.add(
   "active-tab"
 );
+
 document
   .querySelector(
     '.tab-btn[data-tab="match"]'
   )
   .classList.add(
     "active"
-  );
-   
+  );   
 console.log(`
 戦績画像メーカー
 
