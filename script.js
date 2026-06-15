@@ -1597,42 +1597,65 @@ const tabs =
     ".tab-btn"
   );
 
+const sections = {
+
+  match:
+    document.getElementById(
+      "matchInputDetails"
+    ),
+
+  info:
+    document.getElementById(
+      "infoTab"
+    ),
+
+  image:
+    document.getElementById(
+      "imageTab"
+    )
+
+};
+
 tabs.forEach(btn => {
 
   btn.addEventListener(
     "click",
     () => {
 
-      document
-        .getElementById(
-          "matchInputDetails"
-        )
-        .open = false;
+      tabs.forEach(b => {
 
-      document
-        .getElementById(
-          "imageTab"
-        )
-        .open = false;
+        b.classList.remove(
+          "active"
+        );
 
-      document
-        .getElementById(
-          "infoTab"
-        )
-        .open = false;
+      });
 
-      document
-        .querySelectorAll(
-          ".tab-btn"
-        )
-        .forEach(b => {
+      Object.values(
+        sections
+      ).forEach(section => {
 
-          b.classList.remove(
-            "active"
-          );
+        section.classList.remove(
+          "active-tab"
+        );
 
-        });
+      });
 
+      btn.classList.add(
+        "active"
+      );
+
+      sections[
+        btn.dataset.tab
+      ].classList.add(
+        "active-tab"
+      );
+
+    }
+  );
+
+});sections.match.classList.add(
+  "active-tab"
+);
       btn.classList.add(
         "active"
       );
