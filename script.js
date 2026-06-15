@@ -1570,7 +1570,38 @@ document.querySelector(
     resizePreview();
   }
 );
+document
+  .querySelectorAll(
+    'input[type="text"]'
+  )
+  .forEach(input => {
 
+   input.addEventListener(
+  "focus",
+  () => {
+
+    document.body.classList.add(
+      "input-mode"
+    );
+
+    resizePreview();
+
+  }
+);
+
+input.addEventListener(
+  "blur",
+  () => {
+
+    document.body.classList.remove(
+      "input-mode"
+    );
+
+    resizePreview();
+
+  }
+);
+  });
 console.log(`
 戦績画像メーカー
 
