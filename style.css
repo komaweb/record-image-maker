@@ -716,3 +716,16 @@ display: inline-block;
   padding-top: 380px;
 
 }
+.preview-wrapper.compact {
+
+  max-height: 180px;
+
+  overflow: hidden;
+
+}
+
+.preview-wrapper.compact #previewArea {
+
+  transform: scale(0.4);
+
+}
