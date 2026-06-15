@@ -644,7 +644,10 @@ function updatePreview() {
     document.getElementById(
       "tournamentDate"
     ).value;
-  
+  const currentPhase =
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
   const headerImage =
   localStorage.getItem(
     "headerImage"
@@ -753,9 +756,9 @@ if (
     "status-lose";
 
 } else if (
-  records.honsen.length > 0
+  records.honsen.length > 0 ||
+  currentPhase === "本戦"
 ) {
-
   resultText =
     "本戦進出";
 
@@ -857,10 +860,6 @@ if (
   let currentYosenHtml = "";
 let currentHonsenHtml = "";
 
-const currentPhase =
-  document.querySelector(
-    'input[name="phase"]:checked'
-  ).value;
 
 if (
   currentPhase === "予選"
