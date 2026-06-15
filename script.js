@@ -397,6 +397,7 @@ phaseRadios.forEach(radio => {
       previousPhase =
         newPhase;
 saveSettings();
+      updatePreview();
     }
   );
 
