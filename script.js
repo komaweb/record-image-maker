@@ -1234,10 +1234,9 @@ window.addEventListener(
 resizePreview();
 
 const inputDetails =
-  document.querySelector(
-    'details[open]'
+  document.getElementById(
+    "matchInputDetails"
   );
-
 if (inputDetails) {
 
   inputDetails.addEventListener(
