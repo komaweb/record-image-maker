@@ -171,9 +171,11 @@ summary {
 
 }
 .preview-wrapper {
-
-  width: 100%;
-
+  max-height: 180px;
+  overflow: hidden;
+}
+.preview-wrapper.compact #previewArea {
+  transform: scale(0.35);
 }
 body {
   overflow-x: hidden;
