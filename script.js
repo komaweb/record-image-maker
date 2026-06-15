@@ -1656,47 +1656,14 @@ tabs.forEach(btn => {
 });sections.match.classList.add(
   "active-tab"
 );
-      btn.classList.add(
-        "active"
-      );
-
-      const tab =
-        btn.dataset.tab;
-
-      if (tab === "match") {
-
-        document
-          .getElementById(
-            "matchInputDetails"
-          )
-          .open = true;
-
-      }
-
-      if (tab === "info") {
-
-        document
-          .getElementById(
-            "infoTab"
-          )
-          .open = true;
-
-      }
-
-      if (tab === "image") {
-
-        document
-          .getElementById(
-            "imageTab"
-          )
-          .open = true;
-
-      }
-
-    }
+document
+  .querySelector(
+    '.tab-btn[data-tab="match"]'
+  )
+  .classList.add(
+    "active"
   );
-
-});
+   
 console.log(`
 戦績画像メーカー
 
