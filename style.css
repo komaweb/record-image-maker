@@ -178,11 +178,11 @@ summary {
   left: 10px;
   right: 10px;
 
-  height: 260px;
-
-  z-index: 100;
+  max-height: 35vh;
 
   overflow: hidden;
+
+  z-index: 100;
 
 }
 body {
