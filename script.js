@@ -52,7 +52,19 @@ todayBtn.addEventListener(
 
 const saveBtn =
   document.getElementById("saveBtn");
+function updateDeleteButton() {
 
+  const phase =
+    document.querySelector(
+      'input[name="phase"]:checked'
+    ).value;
+
+  document.getElementById(
+    "deleteBtn"
+  ).textContent =
+    `最後に保存した${phase}戦績を削除`;
+
+}
 const deleteBtn =
   document.getElementById("deleteBtn");
 
@@ -300,7 +312,7 @@ document.querySelector(
 
 updateRecordView();
 updatePreview();
-
+updateDeleteButton();
   }
 );
 deleteBtn.addEventListener(
@@ -395,8 +407,11 @@ phaseRadios.forEach(radio => {
       }
 
       previousPhase =
-        newPhase;
+  newPhase;
+
 saveSettings();
+
+updateDeleteButton();
       updatePreview();
     }
   );
