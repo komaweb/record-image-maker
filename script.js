@@ -782,14 +782,25 @@ if (
 
 } else {
 
-  resultText =
-    "予選進行中";
+  if (
+    records.honsen.length > 0 ||
+    currentPhase === "本戦"
+  ) {
+
+    resultText =
+      "本戦進出";
+
+  } else {
+
+    resultText =
+      "予選進行中";
+
+  }
 
   resultClass =
     "status-progress";
 
-}
-  const currentDeck =
+}  const currentDeck =
   document.getElementById(
     "deckName"
   ).value.trim();
