@@ -1096,16 +1096,14 @@ previewArea.innerHTML = `
   </div>
 
   <div class="preview-deck-card">
+  <div class="preview-deck-card">
   <div class="preview-label">
-  使用デッキ
-</div>
-  <div class="preview-deck">
-  ${deck
-  ? deck
-  : '<span class="preview-placeholder">自分のデッキ名</span>'
-}
+    使用デッキ
+  </div>
 
-</div>
+  <div class="preview-deck">
+    ${deck || ""}
+  </div>
 </div>
 ${headerImageHtml}
 <div class="preview-match-card">
