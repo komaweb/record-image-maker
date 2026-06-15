@@ -585,14 +585,12 @@ removeHeaderImageBtn.addEventListener(
   "click",
   () => {
 
-    localStorage.removeItem(
-      "headerImage"
-    );
+    localStorage.setItem(
+  "headerImage",
+  compressedImage
+);
 
-    headerImageInput.value = "";
-
-
-    updatePreview();
+updatePreview();
 
 setTimeout(() => {
   resizePreview();
