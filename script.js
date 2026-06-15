@@ -818,22 +818,12 @@ const displayPlay =
 const displayCurrentResult =
   currentResult || "未";
   let currentMatchHtml = "";
-
 const totalMatches =
   records.yosen.length +
   records.honsen.length;
 let displayDeckName = currentDeck;
 
-if (
-  totalMatches === 0 &&
-  !currentDeck
-) {
-
-  displayDeckName =
-    '<span class="preview-placeholder">対戦相手のデッキ名</span>';
-
-}
-  const hasInput =
+const hasInput =
   currentPlay ||
   currentResult;
 
@@ -844,8 +834,7 @@ if (
 
   displayDeckName = "　";
 
-}
-if (
+}if (
   displayDeckName ||
   totalMatches === 0
 ) {
