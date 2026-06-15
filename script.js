@@ -1592,19 +1592,6 @@ document.addEventListener(
   }
 );
 
-input.addEventListener(
-  "blur",
-  () => {
-
-    document.body.classList.remove(
-      "input-mode"
-    );
-
-    resizePreview();
-
-  }
-);
-  });
 const tabs =
   document.querySelectorAll(
     ".tab-btn"
