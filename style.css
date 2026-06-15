@@ -762,7 +762,7 @@ body.input-mode #previewArea {
 
   box-sizing: border-box;
 
-  background: #F5F5F7;
+  background: white;
 
   z-index: 1000;
 
@@ -771,20 +771,42 @@ body.input-mode #previewArea {
 
   flex: 1;
 
-  height: 42px;
+  height: 72px;
 
-  border-radius: 12px;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  border-radius: 16px;
 
   border: 2px solid #DDDDDD;
 
-}
+  background: white;
 
+  color: #888;
+
+}
+.tab-icon {
+
+  width: 24px;
+
+  height: 24px;
+
+  object-fit: contain;
+
+}
 .tab-btn.active {
 
   background: #007AFF;
 
-  color: white;
-
   border-color: #007AFF;
+
+  color: white;
 
 }
