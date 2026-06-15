@@ -1209,12 +1209,21 @@ function resizePreview() {
       ".preview-wrapper"
     );
 
-  const scale =
-    Math.min(
-      (wrapper.clientWidth - 20) / 950,
-      1
-    );
+  let scale =
+  Math.min(
+    (wrapper.clientWidth - 20) / 950,
+    1
+  );
 
+if (
+  wrapper.classList.contains(
+    "compact"
+  )
+) {
+
+  scale *= 0.4;
+
+}
   preview.style.transform =
     `scale(${scale})`;
 
