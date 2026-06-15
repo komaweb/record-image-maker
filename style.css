@@ -178,9 +178,6 @@ summary {
 
 .preview-wrapper.compact {
 
-  max-height: 180px;
-
-  overflow: hidden;
 
 }
 
@@ -722,14 +719,14 @@ display: inline-block;
 }
 body.input-mode .preview-wrapper {
 
-  max-height: 180px;
-
-  overflow: hidden;
+  height: 180px;
 
 }
 
 body.input-mode #previewArea {
 
-  transform: scale(0.35);
+  transform: scale(0.2);
+
+  transform-origin: top center;
 
 }
