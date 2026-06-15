@@ -182,7 +182,8 @@ summary {
 
   height: auto;
 
-}body {
+}
+body {
   overflow-x: hidden;
 }
 #previewArea {
