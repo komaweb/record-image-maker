@@ -731,3 +731,16 @@ body.input-mode #previewArea {
 
 }
 console.log(sections);
+#matchInputDetails,
+#infoTab,
+#imageTab {
+
+  display: none;
+
+}
+
+.active-tab {
+
+  display: block;
+
+}
