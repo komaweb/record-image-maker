@@ -1232,41 +1232,38 @@ window.addEventListener(
 );
 
 resizePreview();
-document
-  .querySelectorAll(
-    'input[type="text"]'
-  )
-  .forEach(input => {
 
-    input.addEventListener(
-      "focus",
-      () => {
+const inputDetails =
+  document.querySelector(
+    'details[open]'
+  );
 
-        document.body.classList.add(
-          "input-mode"
+if (inputDetails) {
+
+  inputDetails.addEventListener(
+    "toggle",
+    () => {
+
+      document
+        .querySelector(
+          ".preview-wrapper"
+        )
+        .classList.toggle(
+          "compact",
+          inputDetails.open
         );
 
-      }
-    );
+      resizePreview();
 
-    input.addEventListener(
-      "blur",
-      () => {
+    }
+  );
 
-        document.body.classList.remove(
-          "input-mode"
-        );
-
-      }
-    );
-
-  });
+}
 
 const saveImageBtn =
   document.getElementById(
     "saveImageBtn"
   );
-
 const resetBtn =
   document.getElementById(
     "resetBtn"
