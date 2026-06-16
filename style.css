@@ -857,3 +857,10 @@ body.input-mode #previewArea {
   color: #888;
 
 }
+.danger-btn {
+
+  color: #C62828;
+
+  border: 1px solid #C62828;
+
+}
