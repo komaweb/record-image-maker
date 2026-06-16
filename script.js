@@ -1291,9 +1291,9 @@ if (
     `scale(${scale})`;
 preview.style.transform =
   `scale(${scale})`;
-
+  
 preview.style.transformOrigin =
-  "top left";
+  "top center";
 
 wrapper.style.height =
   `${Math.ceil(
