@@ -1776,7 +1776,9 @@ document
   )
   .classList.add(
     "active"
-  );   
+  );
+
+resizePreview();
 document
   .querySelectorAll(
     ".tab-icon"
