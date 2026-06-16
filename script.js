@@ -1097,9 +1097,7 @@ previewArea.innerHTML = `
 
   </div>
   <div class="preview-deck-card">
-  <div class="preview-label">
-    使用デッキ
-  </div>
+
 
   <div class="preview-deck">
     ${deck || ""}
