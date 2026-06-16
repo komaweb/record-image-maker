@@ -773,8 +773,6 @@ body.input-mode #previewArea {
 
   padding-top: 6px
     
-  -webkit-tap-highlight-color:
-    transparent;
   flex: 1;
 
   height: 60px;
