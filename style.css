@@ -769,6 +769,10 @@ body.input-mode #previewArea {
 }
 .tab-btn {
 
+  justify-content: flex-start;
+
+  padding-top: 6px
+    
   -webkit-tap-highlight-color:
     transparent;
   flex: 1;
@@ -818,6 +822,14 @@ body.input-mode #previewArea {
 #settingsTab {
 
   display: none;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  background: white;
 
 }
 .tab-btn span {
