@@ -810,44 +810,18 @@ body.input-mode #previewArea {
   color: white;
 
 }
-#matchInputDetails {
-
-  border: 2px solid #DDDDDD;
-
-  border-top: 5px solid #FF4D4F;
-
-  border-radius: 20px;
-
-  padding: 20px;
-
-  background: white;
-
-}
-
-#infoTab {
-
-  border: 2px solid #DDDDDD;
-
-  border-top: 5px solid #F5C542;
-
-  border-radius: 20px;
-
-  padding: 20px;
-
-  background: white;
-
-}
-
+#matchInputDetails,
+#infoTab,
 #imageTab {
 
   border: 2px solid #DDDDDD;
 
-  border-top: 5px solid #007AFF;
-
   border-radius: 20px;
 
   padding: 20px;
 
   background: white;
+
+  box-sizing: border-box;
 
 }
