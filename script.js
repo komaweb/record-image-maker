@@ -1182,6 +1182,17 @@ document
 
     }
   );
+document
+  .getElementById("tournamentDate")
+  .addEventListener(
+    "input",
+    () => {
+
+      saveSettings();
+      updatePreview();
+
+    }
+  );
 document.addEventListener(
   "input",
   (event) => {
