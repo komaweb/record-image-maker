@@ -1287,8 +1287,6 @@ if (
   scale *= 0.25;
 
 }
-  preview.style.transform =
-    `scale(${scale})`;
 preview.style.transform =
   `scale(${scale})`;
   
