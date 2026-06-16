@@ -1817,6 +1817,18 @@ document
         ].inactive;
 
   });
+window.addEventListener(
+  "pageshow",
+  () => {
+
+    setTimeout(() => {
+
+      resizePreview();
+
+    }, 50);
+
+  }
+);
 console.log(`
 戦績画像メーカー
 
