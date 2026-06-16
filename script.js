@@ -1666,10 +1666,14 @@ const sections = {
   image:
     document.getElementById(
       "imageTab"
+    ),
+
+  settings:
+    document.getElementById(
+      "settingsTab"
     )
 
 };
-
 const iconMap = {
 
   match: {
