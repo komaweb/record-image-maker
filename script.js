@@ -1299,12 +1299,6 @@ wrapper.style.height =
   `${Math.ceil(
     preview.scrollHeight * scale
   ) + 80}px`;
-  preview.style.marginLeft =
-  `${(
-    wrapper.clientWidth -
-    950 * scale
-  ) / 2}px`;
-}
 
 window.addEventListener(
   "resize",
