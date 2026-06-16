@@ -820,3 +820,8 @@ body.input-mode #previewArea {
   display: none;
 
 }
+.tab-btn span {
+
+  font-size: 12px;
+
+}
