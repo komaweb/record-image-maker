@@ -1361,7 +1361,7 @@ saveImageBtn.addEventListener(
 
         navigator.share({
           files: [file],
-          title: "CS戦績"
+          
         });
 
       } else {
