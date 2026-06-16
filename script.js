@@ -1673,26 +1673,25 @@ const sections = {
 const iconMap = {
 
   match: {
-    active: "match-white.png",
-    inactive: "match-color.png"
+    active: "match_white.png",
+    inactive: "match_color.png"
   },
 
   info: {
     active:
-      "tournament-white.png",
+      "tournament_white.png",
     inactive:
-      "tournament-color.png"
+      "tournament_color.png"
   },
 
   image: {
     active:
-      "image-white.png",
+      "image_white.png",
     inactive:
-      "image-color.png"
+      "image_color.png"
   }
 
 };
-
 tabs.forEach(btn => {
   btn.addEventListener(
     "click",
