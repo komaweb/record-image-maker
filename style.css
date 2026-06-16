@@ -869,5 +869,8 @@ body.input-mode #previewArea {
 
 }
 #previewArea {
-  margin: 0 auto;
+  width: 950px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
