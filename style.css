@@ -724,10 +724,10 @@ body.input-mode #previewArea {
   transform-origin: top center;
 
 }
-
 #matchInputDetails,
 #infoTab,
-#imageTab {
+#imageTab,
+#settingsTab {
 
   display: none;
 
@@ -812,16 +812,9 @@ body.input-mode #previewArea {
 }
 #matchInputDetails,
 #infoTab,
-#imageTab {
+#imageTab,
+#settingsTab {
 
-  border: 2px solid #DDDDDD;
-
-  border-radius: 20px;
-
-  padding: 20px;
-
-  background: white;
-
-  box-sizing: border-box;
+  display: none;
 
 }
