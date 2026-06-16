@@ -1673,22 +1673,22 @@ const sections = {
 const iconMap = {
 
   match: {
-    active: "match.png",
-    inactive:
-      "match_color.png"
+    active: "match-white.png",
+    inactive: "match-color.png"
   },
 
   info: {
     active:
-      "tournament.png",
+      "tournament-white.png",
     inactive:
-      "tournament_color.png"
+      "tournament-color.png"
   },
 
   image: {
-    active: "image.png",
+    active:
+      "image-white.png",
     inactive:
-      "image_color.png"
+      "image-color.png"
   }
 
 };
@@ -1715,16 +1715,17 @@ tabs.forEach(btn => {
         );
       });
 
-      btn.classList.add(
-        "active"
-      );
+ btn.classList.add(
+  "active"
+);
 
-      sections[
-        btn.dataset.tab
-      ].classList.add(
-        "active-tab"
-      );
-      document
+sections[
+  btn.dataset.tab
+].classList.add(
+  "active-tab"
+);
+
+document
   .querySelectorAll(
     ".tab-icon"
   )
@@ -1750,7 +1751,6 @@ tabs.forEach(btn => {
         ].inactive;
 
   });
-
     }
   );
 
