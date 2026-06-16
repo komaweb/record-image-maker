@@ -1293,7 +1293,7 @@ preview.style.transform =
   `scale(${scale})`;
   
 preview.style.transformOrigin =
-  "top center";
+  "top left";
 
 wrapper.style.height =
   `${Math.ceil(
