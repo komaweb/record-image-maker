@@ -444,10 +444,20 @@ addInfoBtn.addEventListener(
     input.placeholder =
       "項目を入力";
 
-extraInfoArea.appendChild(
-  input
-);
-saveSettings();
+    extraInfoArea.appendChild(
+      input
+    );
+
+    document
+      .getElementById(
+        "removeInfoBtn"
+      )
+      .style.display =
+      "inline-block";
+
+    saveSettings();
+    updatePreview();
+
   }
 );
 const removeInfoBtn =
@@ -464,19 +474,36 @@ removeInfoBtn.addEventListener(
         ".extraInfo"
       );
 
-    if (inputs.length <= 1) {
-      return;
+    if (
+      inputs.length > 0
+    ) {
+
+      inputs[
+        inputs.length - 1
+      ].remove();
+
     }
 
-    const lastInput =
-      inputs[inputs.length - 1];
+    if (
+      extraInfoArea
+        .querySelectorAll(
+          ".extraInfo"
+        ).length === 0
+    ) {
 
-lastInput.remove();
+      document
+        .getElementById(
+          "removeInfoBtn"
+        )
+        .style.display =
+        "none";
 
-saveSettings()
-  updatePreview();
+    }
 
-}
+    saveSettings();
+    updatePreview();
+
+  }
 );
 const finalResult =
   document.getElementById(
