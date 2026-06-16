@@ -769,6 +769,8 @@ body.input-mode #previewArea {
 }
 .tab-btn {
 
+  -webkit-tap-highlight-color:
+    transparent;
   flex: 1;
 
   height: 72px;
