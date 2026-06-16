@@ -194,7 +194,8 @@ body {
   width: 950px;
   transform-origin: top left;
   display: block;
- 
+}
+
 .preview-header {
 
   display: flex;
