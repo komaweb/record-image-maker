@@ -45,6 +45,18 @@ todayBtn.addEventListener(
 
     saveSettings();
     updatePreview();
+    window.addEventListener(
+  "load",
+  () => {
+
+    setTimeout(() => {
+
+      resizePreview();
+
+    }, 100);
+
+  }
+);
 
   }
 );
