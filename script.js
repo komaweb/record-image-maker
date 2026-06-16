@@ -1674,21 +1674,21 @@ const iconMap = {
 
   match: {
     active: "match_white.png",
-    inactive: "match_color.png"
+    inactive: "match.png"
   },
 
   info: {
     active:
       "tournament_white.png",
     inactive:
-      "tournament_color.png"
+      "tournament.png"
   },
 
   image: {
     active:
       "image_white.png",
     inactive:
-      "image_color.png"
+      "image.png"
   }
 
 };
