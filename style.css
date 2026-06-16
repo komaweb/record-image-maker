@@ -785,9 +785,9 @@ body.input-mode #previewArea {
 
   border-radius: 16px;
 
-  border: 2px solid #DDDDDD;
-
   background: white;
+
+  border: none;
 
   color: #888;
 
