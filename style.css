@@ -618,15 +618,6 @@ details[open] summary {
   margin-bottom: 20px;
 
 }
-.section-description {
-
-  color: #888;
-
-  font-size: 16px;
-
-  margin-bottom: 25px;
-
-}
 
 #resetBtn {
 
@@ -721,21 +712,7 @@ body.input-mode #previewArea {
   transform-origin: top center;
 
 }
-body.input-mode #previewArea {
 
-  transform: scale(0.2);
-
-  transform-origin: top center;
-
-}
-#matchInputDetails,
-#infoTab,
-#imageTab,
-#settingsTab {
-
-  display: none;
-
-}
 
 .active-tab {
 
