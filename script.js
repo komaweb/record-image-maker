@@ -1299,6 +1299,8 @@ wrapper.style.height =
   `${Math.ceil(
     preview.scrollHeight * scale
   ) + 80}px`;
+  
+}
 
 window.addEventListener(
   "resize",
