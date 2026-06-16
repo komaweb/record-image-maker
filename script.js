@@ -1670,8 +1670,30 @@ const sections = {
 
 };
 
-tabs.forEach(btn => {
+const iconMap = {
 
+  match: {
+    active: "match.png",
+    inactive:
+      "match_color.png"
+  },
+
+  info: {
+    active:
+      "tournament.png",
+    inactive:
+      "tournament_color.png"
+  },
+
+  image: {
+    active: "image.png",
+    inactive:
+      "image_color.png"
+  }
+
+};
+
+tabs.forEach(btn => {
   btn.addEventListener(
     "click",
     () => {
@@ -1691,7 +1713,32 @@ tabs.forEach(btn => {
         section.classList.remove(
           "active-tab"
         );
+document
+  .querySelectorAll(
+    ".tab-icon"
+  )
+  .forEach(icon => {
 
+    const btn =
+      icon.closest(
+        ".tab-btn"
+      );
+
+    const tab =
+      btn.dataset.tab;
+
+    icon.src =
+      btn.classList.contains(
+        "active"
+      )
+      ? iconMap[
+          tab
+        ].active
+      : iconMap[
+          tab
+        ].inactive;
+
+  });
       });
 
       btn.classList.add(
@@ -1703,7 +1750,6 @@ tabs.forEach(btn => {
       ].classList.add(
         "active-tab"
       );
-
     }
   );
 
@@ -1720,6 +1766,32 @@ document
   .classList.add(
     "active"
   );   
+document
+  .querySelectorAll(
+    ".tab-icon"
+  )
+  .forEach(icon => {
+
+    const btn =
+      icon.closest(
+        ".tab-btn"
+      );
+
+    const tab =
+      btn.dataset.tab;
+
+    icon.src =
+      btn.classList.contains(
+        "active"
+      )
+      ? iconMap[
+          tab
+        ].active
+      : iconMap[
+          tab
+        ].inactive;
+
+  });
 console.log(`
 戦績画像メーカー
 
