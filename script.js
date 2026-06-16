@@ -1694,7 +1694,14 @@ const iconMap = {
     inactive:
       "image.png"
   }
+,
 
+settings: {
+  active:
+    "settings_white.png",
+  inactive:
+    "settings.png"
+}
 };
 tabs.forEach(btn => {
   btn.addEventListener(
