@@ -1713,7 +1713,18 @@ tabs.forEach(btn => {
         section.classList.remove(
           "active-tab"
         );
-document
+      });
+
+      btn.classList.add(
+        "active"
+      );
+
+      sections[
+        btn.dataset.tab
+      ].classList.add(
+        "active-tab"
+      );
+      document
   .querySelectorAll(
     ".tab-icon"
   )
@@ -1739,17 +1750,7 @@ document
         ].inactive;
 
   });
-      });
 
-      btn.classList.add(
-        "active"
-      );
-
-      sections[
-        btn.dataset.tab
-      ].classList.add(
-        "active-tab"
-      );
     }
   );
 
