@@ -174,8 +174,9 @@ summary {
 
   width: 100%;
 
-}
+  text-align: center;
 
+}
 .preview-wrapper.compact {
 
 
@@ -866,4 +867,7 @@ body.input-mode #previewArea {
 
   border: 1px solid #C62828;
 
+}
+#previewArea {
+  margin: 0 auto;
 }
