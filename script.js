@@ -478,6 +478,24 @@ phaseRadios.forEach(radio => {
       const newPhase =
         radio.value;
 
+      const deck =
+        deckName.value.trim();
+
+      const play =
+        document.querySelector(
+          'input[name="play"]:checked'
+        ).value;
+
+      const result =
+        document.querySelector(
+          'input[name="result"]:checked'
+        ).value;
+
+      const filledCount =
+        (deck ? 1 : 0) +
+        (play ? 1 : 0) +
+        (result ? 1 : 0);
+
       let message = "";
 
       if (
@@ -485,16 +503,40 @@ phaseRadios.forEach(radio => {
         newPhase === "本戦"
       ) {
 
-        message =
-          "本戦に進出しますか？";
+        if (
+          filledCount > 0 &&
+          filledCount < 3
+        ) {
+
+          message =
+            "未入力の項目があります。\n\nこのまま本戦へ進みますか？";
+
+        } else {
+
+          message =
+            "本戦に進出しますか？";
+
+        }
 
       } else if (
         previousPhase === "本戦" &&
         newPhase === "予選"
       ) {
 
-        message =
-          "予選戦績入力に切り替えますか？";
+        if (
+          filledCount > 0 &&
+          filledCount < 3
+        ) {
+
+          message =
+            "未入力の項目があります。\n\nこのまま予選戦績入力に切り替えますか？";
+
+        } else {
+
+          message =
+            "予選戦績入力に切り替えますか？";
+
+        }
 
       }
 
@@ -507,15 +549,19 @@ phaseRadios.forEach(radio => {
         ).checked = true;
 
         return;
+
       }
 
+      saveCurrentRecord();
+
       previousPhase =
-  newPhase;
+        newPhase;
 
-saveSettings();
+      saveSettings();
 
-updateDeleteButton();
+      updateDeleteButton();
       updatePreview();
+
     }
   );
 
