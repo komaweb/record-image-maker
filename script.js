@@ -563,7 +563,8 @@ titleLabel.addEventListener(
       placeholders[
         titleLabel.value
       ];
-
+saveSettings();
+updatePreview();
   }
 );
 const headerImageInput =
