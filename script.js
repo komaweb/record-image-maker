@@ -1671,16 +1671,7 @@ if (
 
     }
   );
-if (
-  savedExtraInfos.length > 1
-) {
 
-  document.getElementById(
-    "removeInfoBtn"
-  ).style.display =
-    "block";
-
-}
 
 titleLabel.dispatchEvent(
   new Event("change")
