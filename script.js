@@ -731,11 +731,17 @@ function updatePreview() {
     document.getElementById(
       "myDeck"
     ).value;
-
+  
+const titleLabelValue =
+  document.getElementById(
+    "titleLabel"
+  ).value;
+  
   const tournament =
     document.getElementById(
       "tournamentName"
     ).value;
+
 
   const date =
     document.getElementById(
@@ -1481,10 +1487,6 @@ function saveSettings() {
       "myDeck"
     ).value
   );
-const titleLabelValue =
-  document.getElementById(
-    "titleLabel"
-  ).value;
   
   localStorage.setItem(
     "tournamentName",
