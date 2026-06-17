@@ -1,9 +1,11 @@
-alert("script start");
+alert("1");
+
 const todayBtn =
   document.getElementById(
     "todayBtn"
   );
 
+alert("2");
 todayBtn.addEventListener(
   "click",
   () => {
@@ -1948,3 +1950,4 @@ console.log(`
 ほぼ切り貼りしただけなので、値札シールを剥がした後みたいベッチョベチョ
 暖かい目で見てください
 `);
+alert("END");
