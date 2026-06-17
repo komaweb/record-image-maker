@@ -1431,10 +1431,14 @@ const resetBtn =
     "resetBtn"
   );
 
+alert("A");
+
 loadSettings();
+
+alert("B");
+
 updateRecordView();
 updatePreview();
-
 document.getElementById(
   "previewArea"
 ).style.visibility = "visible";
