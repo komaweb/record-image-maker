@@ -727,11 +727,6 @@ function updatePreview() {
       "myDeck"
     ).value;
   
-const titleLabelValue =
-  document.getElementById(
-    "titleLabel"
-  ).value;
-  
   const tournament =
     document.getElementById(
       "tournamentName"
