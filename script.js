@@ -537,7 +537,7 @@ removeInfoBtn.addEventListener(
 
       document
         .getElementById(
-          "removeInfoBtn"
+          "foBtn"
         )
         .style.display =
         "none";
@@ -1671,6 +1671,14 @@ if (
 
     }
   );
+if (
+  savedExtraInfos.length > 1
+) {
+
+  document.getElementById(
+    "removeInfoBtn"
+  ).style.display =
+    "block";
 
 }
 
