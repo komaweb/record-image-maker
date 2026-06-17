@@ -264,14 +264,128 @@ records.honsen.forEach(
 );
 
 }
+function saveCurrentRecord() {
 
+  const deck =
+    deckName.value.trim();
+
+  const play =
+    document.querySelector(
+      'input[name="play"]:checked'
+    ).value;
+
+  const result =
+    document.querySelector(
+      'input[name="result"]:checked'
+    ).value;
+
+  if (
+    deck === "" &&
+    play === "" &&
+    result === ""
+  ) {
+    return false;
+  }
+
+  const phase =
+    document.querySelector(
+      'input[name="phase"]:checked'
+    ).value;
+
+  const record = {
+    deck: deck,
+    play: play,
+    result: result
+  };
+
+  if (phase === "予選") {
+
+    records.yosen.push(
+      record
+    );
+
+  } else {
+
+    records.honsen.push(
+      record
+    );
+
+  }
+
+  localStorage.setItem(
+    "records",
+    JSON.stringify(records)
+  );
+
+  deckName.value = "";
+
+  document.querySelector(
+    'input[name="play"][value=""]'
+  ).checked = true;
+
+  document.querySelector(
+    'input[name="result"][value=""]'
+  ).checked = true;
+
+  updateRecordView();
+  updatePreview();
+  updateDeleteButton();
+
+  return true;
+
+}
 saveBtn.addEventListener(
   "click",
   () => {
 
-const deck =
-  deckName.value.trim();
+    const deck =
+      deckName.value.trim();
 
+    const play =
+      document.querySelector(
+        'input[name="play"]:checked'
+      ).value;
+
+    const result =
+      document.querySelector(
+        'input[name="result"]:checked'
+      ).value;
+
+    const filledCount =
+      (deck ? 1 : 0) +
+      (play ? 1 : 0) +
+      (result ? 1 : 0);
+
+    if (
+      filledCount === 0
+    ) {
+
+      if (
+        !confirm(
+          "入力内容がありません。\n\nこのまま次へ進みますか？"
+        )
+      ) {
+        return;
+      }
+
+    } else if (
+      filledCount < 3
+    ) {
+
+      if (
+        !confirm(
+          "未入力の項目があります。\n\nこのまま次へ進みますか？"
+        )
+      ) {
+        return;
+      }
+
+    }
+
+    saveCurrentRecord();
+
+  }
+);
 const play =
   document.querySelector(
     'input[name="play"]:checked'
