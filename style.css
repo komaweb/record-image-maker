@@ -483,7 +483,8 @@ text-align: center;
   color: #000;
   font-size: 38px;
     
-}.preview-header-row {
+}
+.preview-header-row {
 
   display: flex;
 
