@@ -388,10 +388,10 @@
 <script>
 alert("HTMLから直接");
 </script>
-
-<script src="./script.js?v=999"></script>
-
-<script>
+<script src="./script.js?v=999"
+onload="alert('loaded')"
+onerror="alert('error')">
+</script>>
 alert("HTMLの後");
 </script>
 </body>
