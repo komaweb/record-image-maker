@@ -1173,16 +1173,10 @@ previewArea.innerHTML = `
   </div>
 <div class="preview-deck-card">
 
-  ${
-    titleLabelValue !== "タイトル"
-      ? `
-      <div class="preview-label">
-        ${titleLabelValue}
-      </div>
-      `
-      : ""
-  }
-
+<div class="preview-label">
+  使用デッキ
+</div>
+ 
   <div class="preview-deck">
     ${deck || ""}
   </div>
@@ -1498,12 +1492,7 @@ function saveSettings() {
       'input[name="phase"]:checked'
     ).value
   );
-  localStorage.setItem(
-  "titleLabel",
-  document.getElementById(
-    "titleLabel"
-  ).value
-);
+ 
 const extraInfos = [];
 
 document
@@ -1544,10 +1533,6 @@ function loadSettings() {
     localStorage.getItem(
       "currentPhase"
     );
-const savedTitleLabel =
-  localStorage.getItem(
-    "titleLabel"
-  );
   if (myDeck) {
     document.getElementById(
       "myDeck"
@@ -1565,14 +1550,6 @@ const savedTitleLabel =
       "tournamentDate"
     ).value = tournamentDate;
   }
-if (savedTitleLabel) {
-
-  document.getElementById(
-    "titleLabel"
-  ).value =
-    savedTitleLabel;
-
-}
   document.getElementById(
     "finalResult"
   ).value = "未選択";
@@ -1636,9 +1613,6 @@ if (
 
 }
 
-titleLabel.dispatchEvent(
-  new Event("change")
-);
 }
   resetBtn.addEventListener(
   "click",
