@@ -1175,12 +1175,22 @@ previewArea.innerHTML = `
     ${extraHtml}
 
   </div>
-  <div class="preview-deck-card">
+<div class="preview-deck-card">
 
+  ${
+    titleLabelValue !== "タイトル"
+      ? `
+      <div class="preview-label">
+        ${titleLabelValue}
+      </div>
+      `
+      : ""
+  }
 
   <div class="preview-deck">
     ${deck || ""}
   </div>
+
 </div>
 ${headerImageHtml}
 <div class="preview-match-card">
@@ -1471,7 +1481,11 @@ function saveSettings() {
       "myDeck"
     ).value
   );
-
+const titleLabelValue =
+  document.getElementById(
+    "titleLabel"
+  ).value;
+  
   localStorage.setItem(
     "tournamentName",
     document.getElementById(
@@ -1492,6 +1506,12 @@ function saveSettings() {
       'input[name="phase"]:checked'
     ).value
   );
+  localStorage.setItem(
+  "titleLabel",
+  document.getElementById(
+    "titleLabel"
+  ).value
+);
 const extraInfos = [];
 
 document
@@ -1532,7 +1552,10 @@ function loadSettings() {
     localStorage.getItem(
       "currentPhase"
     );
-
+const savedTitleLabel =
+  localStorage.getItem(
+    "titleLabel"
+  );
   if (myDeck) {
     document.getElementById(
       "myDeck"
@@ -1550,7 +1573,14 @@ function loadSettings() {
       "tournamentDate"
     ).value = tournamentDate;
   }
+if (savedTitleLabel) {
 
+  document.getElementById(
+    "titleLabel"
+  ).value =
+    savedTitleLabel;
+
+}
   document.getElementById(
     "finalResult"
   ).value = "未選択";
