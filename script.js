@@ -526,6 +526,46 @@ const customResult =
   document.getElementById(
     "customResult"
   );
+const titleLabel =
+  document.getElementById(
+    "titleLabel"
+  );
+
+const titleInput =
+  document.getElementById(
+    "myDeck"
+  );
+
+titleLabel.addEventListener(
+  "change",
+  () => {
+
+    const placeholders = {
+
+      "タイトル":
+        "タイトルを入力",
+
+      "使用デッキ":
+        "デッキ名を入力",
+
+      "使用キャラ":
+        "キャラ名を入力",
+
+      "使用構成":
+        "構成名を入力",
+
+      "使用リスト":
+        "リスト名を入力"
+
+    };
+
+    titleInput.placeholder =
+      placeholders[
+        titleLabel.value
+      ];
+
+  }
+);
 const headerImageInput =
   document.getElementById(
     "headerImageInput"
