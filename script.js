@@ -1898,6 +1898,13 @@ document
     "active"
   );
 
+document
+  .getElementById(
+    "matchInputDetails"
+  )
+  .classList.add(
+    "active-tab"
+  );
 resizePreview();
 document
   .querySelectorAll(
