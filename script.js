@@ -268,23 +268,26 @@ saveBtn.addEventListener(
   "click",
   () => {
 
-    const deck =
-      deckName.value.trim();
+const deck =
+  deckName.value.trim();
 
-    if (deck === "") {
-      return;
-    }
+const play =
+  document.querySelector(
+    'input[name="play"]:checked'
+  ).value;
 
-    const play =
-      document.querySelector(
-        'input[name="play"]:checked'
-      ).value;
+const result =
+  document.querySelector(
+    'input[name="result"]:checked'
+  ).value;
 
-    const result =
-      document.querySelector(
-        'input[name="result"]:checked'
-      ).value;
-
+if (
+  deck === "" &&
+  play === "" &&
+  result === ""
+) {
+  return;
+}
 const phase =
   document.querySelector(
     'input[name="phase"]:checked'
