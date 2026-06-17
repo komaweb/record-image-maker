@@ -510,6 +510,10 @@ text-align: center;
 
   white-space: nowrap;
 
+  min-width: 180px;
+
+  justify-content: flex-end;
+
 }
 #finalResult {
   margin-top: 15px;
