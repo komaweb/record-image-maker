@@ -561,47 +561,6 @@ const customResult =
   document.getElementById(
     "customResult"
   );
-const titleLabel =
-  document.getElementById(
-    "titleLabel"
-  );
-
-const titleInput =
-  document.getElementById(
-    "myDeck"
-  );
-
-titleLabel.addEventListener(
-  "change",
-  () => {
-
-    const placeholders = {
-
-      "タイトル":
-        "タイトルを入力",
-
-      "使用デッキ":
-        "使用デッキ名を入力",
-
-      "使用キャラ":
-        "使用キャラ名を入力",
-
-      "使用構成":
-        "使用構成名を入力",
-
-      "使用リスト":
-        "使用リスト名を入力"
-
-    };
-
-    titleInput.placeholder =
-      placeholders[
-        titleLabel.value
-      ];
-saveSettings();
-updatePreview();
-  }
-);
 const headerImageInput =
   document.getElementById(
     "headerImageInput"
