@@ -1642,6 +1642,8 @@ if (
 titleLabel.dispatchEvent(
   new Event("change")
 );
+}
+
   resetBtn.addEventListener(
   "click",
   () => {
