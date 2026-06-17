@@ -330,7 +330,39 @@ updateDeleteButton();
 deleteBtn.addEventListener(
   "click",
   () => {
+const currentDeck =
+  deckName.value.trim();
 
+const currentPlay =
+  document.querySelector(
+    'input[name="play"]:checked'
+  ).value;
+
+const currentResult =
+  document.querySelector(
+    'input[name="result"]:checked'
+  ).value;
+
+if (
+  currentDeck ||
+  currentPlay ||
+  currentResult
+) {
+
+  deckName.value = "";
+
+  document.querySelector(
+    'input[name="play"][value=""]'
+  ).checked = true;
+
+  document.querySelector(
+    'input[name="result"][value=""]'
+  ).checked = true;
+
+  updatePreview();
+
+  return;
+}
     const phase =
       document.querySelector(
         'input[name="phase"]:checked'
