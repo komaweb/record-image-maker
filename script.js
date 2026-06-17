@@ -1,3 +1,4 @@
+alert("script start");
 const todayBtn =
   document.getElementById(
     "todayBtn"
