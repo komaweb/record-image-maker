@@ -1640,20 +1640,24 @@ if (
 
     }
   );
-if (
-  savedExtraInfos.length > 1
-) {
 
-  document.getElementById(
-    "removeInfoBtn"
-  ).style.display =
-    "inline-block";
+  if (
+
+    savedExtraInfos.length > 1
+
+  ) {
+
+    document.getElementById(
+
+      "removeInfoBtn"
+
+    ).style.display =
+
+      "inline-block";
+
+  }
 
 }
-
-
-}
-
 titleLabel.dispatchEvent(
   new Event("change")
 );
