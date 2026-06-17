@@ -1,3 +1,5 @@
+throw new Error("TEST ERROR");
+
 alert("1");
 
 const todayBtn =
