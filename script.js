@@ -1,13 +1,8 @@
-throw new Error("TEST ERROR");
-
-alert("1");
-
 const todayBtn =
   document.getElementById(
     "todayBtn"
   );
 
-alert("2");
 todayBtn.addEventListener(
   "click",
   () => {
@@ -542,7 +537,7 @@ removeInfoBtn.addEventListener(
 
       document
         .getElementById(
-         "removeInfoBtn"
+          "removeInfoBtn"
         )
         .style.display =
         "none";
@@ -1436,14 +1431,10 @@ const resetBtn =
     "resetBtn"
   );
 
-alert("A");
-
 loadSettings();
-
-alert("B");
-
 updateRecordView();
 updatePreview();
+
 document.getElementById(
   "previewArea"
 ).style.visibility = "visible";
@@ -1681,6 +1672,7 @@ if (
     }
   );
 
+}
 
 titleLabel.dispatchEvent(
   new Event("change")
@@ -1952,4 +1944,3 @@ console.log(`
 ほぼ切り貼りしただけなので、値札シールを剥がした後みたいベッチョベチョ
 暖かい目で見てください
 `);
-alert("END");
