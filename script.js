@@ -1607,45 +1607,42 @@ if (savedTitleLabel) {
       )
     ) || [];
 
-  if (
-    savedExtraInfos.length > 0
-  ) {
+if (
+  savedExtraInfos.length > 0
+) {
 
-    extraInfoArea.innerHTML = "";
+  extraInfoArea.innerHTML = "";
 
-    savedExtraInfos.forEach(
-      (value, index) => {
+  savedExtraInfos.forEach(
+    (value, index) => {
 
-        const input =
-          document.createElement(
-            "input"
-          );
-
-        input.type = "text";
-        input.className =
-          "extraInfo";
-input.placeholder =
-  "項目を入力";
-
-        input.value = value;
-
-        extraInfoArea.appendChild(
-          input
+      const input =
+        document.createElement(
+          "input"
         );
 
-      }
-      titleLabel.dispatchEvent(
+      input.type = "text";
+      input.className =
+        "extraInfo";
 
-  new Event("change")
+      input.placeholder =
+        "項目を入力";
 
-);
-    );
+      input.value = value;
 
-  }
+      extraInfoArea.appendChild(
+        input
+      );
 
+    }
+  );
 
 }
-resetBtn.addEventListener(
+
+titleLabel.dispatchEvent(
+  new Event("change")
+);
+  resetBtn.addEventListener(
   "click",
   () => {
 
