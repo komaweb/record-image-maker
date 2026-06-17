@@ -70,13 +70,12 @@ button {
   margin-bottom: 10px;
 }
 
-.s {
+.tags {
   display: flex;
-
   gap: 10px;
 }
 
-.play- {
+.play-tag {
   background: #E8F5E9;
   color: #2E7D32;
 
@@ -85,12 +84,11 @@ button {
   border-radius: 8px;
 }
 
-.result- {
+.result-tag {
   padding: 6px 12px;
 
   border-radius: 8px;
 }
-
 .勝 {
   background: #FFF8E1;
   color: #F57F17;
