@@ -74,7 +74,7 @@ function updateDeleteButton() {
   document.getElementById(
     "deleteBtn"
   ).textContent =
-    `最後に保存した${phase}戦績を削除`;
+    `一番下の${phase}戦績を削除`;
 
 }
 const deleteBtn =
