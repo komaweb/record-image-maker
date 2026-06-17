@@ -1634,6 +1634,11 @@ input.placeholder =
         );
 
       }
+      titleLabel.dispatchEvent(
+
+  new Event("change")
+
+);
     );
 
   }
