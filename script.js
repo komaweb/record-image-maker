@@ -3,6 +3,7 @@ const todayBtn =
     "todayBtn"
   );
 
+
 todayBtn.addEventListener(
   "click",
   () => {
