@@ -386,65 +386,6 @@ saveBtn.addEventListener(
 
   }
 );
-const play =
-  document.querySelector(
-    'input[name="play"]:checked'
-  ).value;
-
-const result =
-  document.querySelector(
-    'input[name="result"]:checked'
-  ).value;
-
-if (
-  deck === "" &&
-  play === "" &&
-  result === ""
-) {
-  return;
-}
-const phase =
-  document.querySelector(
-    'input[name="phase"]:checked'
-  ).value;
-
-if (phase === "予選") {
-
-  records.yosen.push({
-    deck: deck,
-    play: play,
-    result: result
-  });
-
-} else {
-
-  records.honsen.push({
-    deck: deck,
-    play: play,
-    result: result
-  });
-
-}
-
-localStorage.setItem(
-  "records",
-  JSON.stringify(records)
-);
-
-deckName.value = "";
-document.querySelector(
-  'input[name="play"][value=""]'
-).checked = true;
-
-document.querySelector(
-  'input[name="result"][value=""]'
-).checked = true;
-
-updateRecordView();
-updatePreview();
-updateDeleteButton();
-  }
-);
 deleteBtn.addEventListener(
   "click",
   () => {
