@@ -1565,7 +1565,38 @@ localStorage.setItem(
     extraInfos
   )
 );
-}b
+}
+function loadSettings() {
+
+  const myDeck =
+    localStorage.getItem(
+      "myDeck"
+    );
+
+  const tournamentName =
+    localStorage.getItem(
+      "tournamentName"
+    );
+
+  const tournamentDate =
+    localStorage.getItem(
+      "tournamentDate"
+    );
+
+  const currentPhase =
+    localStorage.getItem(
+      "currentPhase"
+    );
+const savedTitleLabel =
+  localStorage.getItem(
+    "titleLabel"
+  );
+  if (myDeck) {
+    document.getElementById(
+      "myDeck"
+    ).value = myDeck;
+  }
+
   if (tournamentName) {
     document.getElementById(
       "tournamentName"
@@ -1641,23 +1672,8 @@ if (
     }
   );
 
-  if (
-
-    savedExtraInfos.length > 1
-
-  ) {
-
-    document.getElementById(
-
-      "removeInfoBtn"
-
-    ).style.display =
-
-      "inline-block";
-
-  }
-
 }
+
 titleLabel.dispatchEvent(
   new Event("change")
 );
