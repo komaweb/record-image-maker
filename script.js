@@ -1319,8 +1319,19 @@ ${currentYosenHtml}
 </div>
 ${honsenCardHtml}
 
-`;
+<div class="preview-credit">
 
+  <div class="credit-small">
+    created with
+  </div>
+
+  <div class="credit-hashtag">
+    #戦績画像メーカー
+  </div>
+
+</div>
+
+`;
 requestAnimationFrame(() => {
   resizePreview();
 });
