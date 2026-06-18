@@ -1808,13 +1808,13 @@ document.querySelector(
 document.querySelector(
   'input[name="result"][value=""]'
 ).checked = true;
-    extraInfoArea.innerHTML = `
-  <input
-    type="text"
-    class="extraInfo"
-    placeholder="項目を入力"
-  >
-`;
+    
+    extraInfoArea.innerHTML = "";
+
+document.getElementById(
+  "removeInfoBtn"
+).style.display =
+  "none";
 
     updateRecordView();
     updatePreview();
