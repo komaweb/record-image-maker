@@ -932,6 +932,9 @@ body.input-mode #previewArea {
 
   background: #ff0000;
 
+  animation:
+    beta-blink 2s infinite;
+
 }
 
 .beta-blue {
