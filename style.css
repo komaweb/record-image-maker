@@ -927,6 +927,11 @@ body.input-mode #previewArea {
   padding: 6px 0;
 
 }
+.beta-red {
+
+  background: #ff0000;
+
+}
 
 .beta-red .beta-banner-inner {
 
