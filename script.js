@@ -1521,7 +1521,18 @@ updatePreview();
 saveImageBtn.addEventListener(
   "click",
   async () => {
-
+    
+gtag(
+  "event",
+  "save_image",
+  {
+    event_category:
+      "engagement",
+    event_label:
+      "画像保存"
+  }
+);
+    
     const preview =
       document.getElementById(
         "previewArea"
@@ -1767,6 +1778,18 @@ if (
     ) {
       return;
     }
+
+gtag(
+  "event",
+  "new_tournament",
+  {
+    event_category:
+      "engagement",
+    event_label:
+      "新しい大会"
+  }
+);
+    
 
     localStorage.clear();
 
