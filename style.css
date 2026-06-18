@@ -880,3 +880,34 @@ body.input-mode #previewArea {
   font-weight: 700;
 
 }
+.policy-box {
+
+  background: white;
+
+  border: 2px solid #DDDDDD;
+
+  border-radius: 14px;
+
+  padding: 16px;
+
+  margin-top: 10px;
+
+  line-height: 1.8;
+
+  color: #888;
+
+  font-size: 14px;
+
+}
+
+.policy-box p {
+
+  margin: 0 0 12px 0;
+
+}
+
+.policy-box p:last-child {
+
+  margin-bottom: 0;
+
+}
