@@ -1536,11 +1536,35 @@ saveImageBtn.addEventListener(
       );
 
     canvas.toBlob(blob => {
+const now =
+  new Date();
 
+const timestamp =
+  now.getFullYear() +
+  String(
+    now.getMonth() + 1
+  ).padStart(2, "0") +
+  String(
+    now.getDate()
+  ).padStart(2, "0") +
+  "-" +
+  String(
+    now.getHours()
+  ).padStart(2, "0") +
+  String(
+    now.getMinutes()
+  ).padStart(2, "0") +
+  String(
+    now.getSeconds()
+  ).padStart(2, "0");
+
+const fileName =
+  `record-image-${timestamp}.png`;
       const file =
         new File(
-          [blob],
-          "cs-result.png",
+  [blob],
+  fileName,
+        
           {
             type: "image/png"
           }
@@ -1564,10 +1588,10 @@ saveImageBtn.addEventListener(
           document.createElement(
             "a"
           );
-
-        link.download =
-          "cs-result.png";
-
+        
+link.download =
+  fileName;
+        
         link.href =
           canvas.toDataURL(
             "image/png"
