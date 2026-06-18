@@ -852,9 +852,10 @@ body.input-mode #previewArea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}.preview-credit {
+}
+.preview-credit {
 
-  margin-top: 20px;
+  margin-top: 25px;
 
   text-align: right;
 
@@ -868,7 +869,7 @@ body.input-mode #previewArea {
 
 　font-style: italic;
 
-  transform: skew(-8deg);
+  transform: skew(-10deg);
   
   font-weight: 400;
 
@@ -876,7 +877,7 @@ body.input-mode #previewArea {
 
 .credit-hashtag {
 
-  font-size: 25px;
+  font-size: 30px;
 
   font-weight: 700;
 
