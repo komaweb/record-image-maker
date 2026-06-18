@@ -928,12 +928,10 @@ body.input-mode #previewArea {
 
 }
 
-.beta-red {
-
-  background: #ff0000;
+.beta-red .beta-banner-inner {
 
   animation:
-    beta-blink 2s infinite;
+    beta-text-blink 3s infinite;
 
 }
 
@@ -972,7 +970,7 @@ body.input-mode #previewArea {
   }
 
 }
-@keyframes beta-blink {
+@keyframes beta-text-blink {
 
   0% {
 
@@ -982,7 +980,7 @@ body.input-mode #previewArea {
 
   50% {
 
-    opacity: 0.4;
+    opacity: 0.5;
 
   }
 
