@@ -28,64 +28,25 @@
   戦績画像メーカー
 </h1>
 
-.beta-banner {
+<div class="beta-banner beta-red">
 
-  overflow: hidden;
+  <div class="beta-banner-inner">
 
-  white-space: nowrap;
+☆現在β版☆　☆基本機能はそのまま使えます☆　☆毎日調整中☆　☆現在β版☆　☆基本機能はそのまま使えます☆　☆毎日調整中☆　
 
-  color: white;
+  </div>
 
-  font-weight: bold;
+</div>
 
-  font-size: 14px;
+<div class="beta-banner beta-blue">
 
-  padding: 6px 0;
+  <div class="beta-banner-inner">
 
-}
+今後の予定：他端末での動作確認(特にでかい横長画面)！コード大掃除！カラーコード、余白の見直し！その他タブに使い方説明ページ追加！　今後の予定：他端末での動作確認(特にでかい横長画面)！コード大掃除！カラーコード、余白の見直し！その他タブに使い方説明ページ追加！
 
-.beta-red {
+  </div>
 
-  background: #ff0000;
-
-}
-
-.beta-blue {
-
-  background: #0000ff;
-
-}
-
-.beta-banner-inner {
-
-  display: inline-block;
-
-  padding-left: 100%;
-
-  animation:
-    beta-scroll
-    20s linear infinite;
-
-}
-
-@keyframes beta-scroll {
-
-  from {
-
-    transform:
-      translateX(0);
-
-  }
-
-  to {
-
-    transform:
-      translateX(-100%);
-
-  }
-
-}
-  
+</div>
 <div class="preview-wrapper">
   <div class="preview-header-row">
   <button id="saveImageBtn">
