@@ -264,8 +264,10 @@ records.honsen.forEach(
 );
 
 }
-function saveCurrentRecord() {
-
+function saveCurrentRecord(
+  targetPhase = null
+) {
+  
   const deck =
     deckName.value.trim();
 
@@ -287,11 +289,12 @@ function saveCurrentRecord() {
     return false;
   }
 
-  const phase =
-    document.querySelector(
-      'input[name="phase"]:checked'
-    ).value;
-
+ const phase =
+  targetPhase ||
+  document.querySelector(
+    'input[name="phase"]:checked'
+  ).value;
+  
   const record = {
     deck: deck,
     play: play,
@@ -552,8 +555,9 @@ phaseRadios.forEach(radio => {
 
       }
 
-      saveCurrentRecord();
-
+saveCurrentRecord(
+  previousPhase
+);
       previousPhase =
         newPhase;
 
