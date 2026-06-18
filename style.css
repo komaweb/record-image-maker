@@ -936,6 +936,7 @@ body.input-mode #previewArea {
 .beta-red .beta-banner-inner {
 
   animation:
+    beta-scroll 20s linear infinite,
     beta-text-blink 3s infinite;
 
 }
