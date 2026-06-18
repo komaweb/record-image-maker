@@ -864,19 +864,19 @@ body.input-mode #previewArea {
 
 .credit-small {
 
-  font-size: 14px;
+  font-size: 16px;
 
-  font-style: italic;
+　font-style: italic;
 
+  transform: skew(-8deg);
+  
   font-weight: 400;
 
 }
 
 .credit-hashtag {
 
-  font-size: 18px;
-
-  font-style: italic;
+  font-size: 25px;
 
   font-weight: 700;
 
