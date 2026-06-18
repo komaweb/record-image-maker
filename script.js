@@ -1088,9 +1088,9 @@ yosenHtml += `
       ${record.play}
     </span>
 
-    <span class="preview-result-tag ${record.result}">
-      ${record.result}
-    </span>
+ <span class="preview-result-tag ${record.result}">
+  ${record.result || "　"}
+</span>
 
   </div>
 </div>
@@ -1116,9 +1116,9 @@ records.honsen.forEach(record => {
         ${record.play}
       </span>
 
-      <span class="preview-result-tag ${record.result}">
-        ${record.result}
-      </span>
+  <span class="preview-result-tag ${record.result}">
+  ${record.result || "　"}
+</span>
 
     </div>
 
